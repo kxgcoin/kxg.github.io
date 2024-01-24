@@ -1,1256 +1,64 @@
-<!DOCTYPE html>
-<html lang="en-US" class="no-js">
+<html lang="zh-CN" class="js translated-ltr">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta content="#3aac59" data-react-helmet="true" name="theme-color" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="#3aac59" data-react-helmet="true" name="theme-color">
 	<script>
 		(function (html) {
 			html.className = html.className.replace(/\bno-js\b/, "js");
 		})(document.documentElement);
 	</script>
 
-	<title>KXG Network - KXG - Build on A Better Blockchain</title>
+	<title>KXG Network - KXG - 构建更好的区块链</title>
 	<meta name="description"
-		content="KXG Network is a revolutionary public blockchain architected for real-world utility. Build &amp; create on a more secure, sustainable, compliant technology." />
-	<link rel="canonical" href="https://www.kxgcoin.com/" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Home" />
+		content="KXG Network is a revolutionary public blockchain architected for real-world utility. Build &amp; create on a more secure, sustainable, compliant technology.">
+	<link rel="canonical" href="https://www.kxgcoin.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Home">
 	<meta property="og:description"
-		content="KXG Network is a revolutionary public blockchain architected for real-world utility. Build &amp; create on a more secure, sustainable, compliant technology." />
-	<meta property="og:url" content="https://www.kxgcoin.com/" />
-	<meta property="og:site_name" content="KXG Network" />
-	<meta property="og:image" content="./assets/wp-content/uploads/2023/01/logo.png" />
-	<meta property="og:image:width" content="2048" />
-	<meta property="og:image:height" content="1968" />
-	<meta property="og:image:type" content="image/png" />
+		content="KXG Network is a revolutionary public blockchain architected for real-world utility. Build &amp; create on a more secure, sustainable, compliant technology.">
+	<meta property="og:url" content="https://www.kxgcoin.com/">
+	<meta property="og:site_name" content="KXG Network">
+	<meta property="og:image" content="./assets/wp-content/uploads/2023/01/logo.png">
+	<meta property="og:image:width" content="2048">
+	<meta property="og:image:height" content="1968">
+	<meta property="og:image:type" content="image/png">
 
-
-	<style id="wp-emoji-styles-inline-css" type="text/css">
-		img.wp-smiley,
-		img.emoji {
-			display: inline !important;
-			border: none !important;
-			box-shadow: none !important;
-			height: 1em !important;
-			width: 1em !important;
-			margin: 0 0.07em !important;
-			vertical-align: -0.1em !important;
-			background: none !important;
-			padding: 0 !important;
-		}
-	</style>
 	<link rel="stylesheet" id="wp-block-library-css"
-		href="./assets/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2" type="text/css" media="all" />
-	<style id="wp-block-library-inline-css" type="text/css">
-		.has-text-align-justify {
-			text-align: justify;
-		}
-	</style>
+		href="./assets/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2" type="text/css" media="all">
+
 	<link rel="stylesheet" id="mediaelement-css"
 		href="./assets/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" type="text/css"
-		media="all" />
+		media="all">
 	<link rel="stylesheet" id="wp-mediaelement-css"
-		href="./assets/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.4.2" type="text/css" media="all" />
-	<style id="chia-tabs-style-inline-css" type="text/css">
-		.editor-styles-wrapper .wp-block-chia-tabs.is-vertical .wp-block-chia-tab-item {
-			flex-direction: row;
-		}
+		href="./assets/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.4.2" type="text/css" media="all">
 
-		.editor-styles-wrapper .wp-block-chia-tabs .wp-block-chia-tab-item {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.editor-styles-wrapper .wp-block-chia-tabs .tab-item.is-active:after {
-			transition: none !important;
-		}
-
-		.editor-styles-wrapper .wp-block-chia-tabs .tabs__tab-item>.block-list-appender {
-			position: relative;
-			width: 100%;
-		}
-	</style>
-	<style id="global-styles-inline-css" type="text/css">
-		body {
-			--wp--preset--color--black: #000000;
-			--wp--preset--color--cyan-bluish-gray: #abb8c3;
-			--wp--preset--color--white: var(--wp--custom--color--white);
-			--wp--preset--color--pale-pink: #f78da7;
-			--wp--preset--color--vivid-red: #cf2e2e;
-			--wp--preset--color--luminous-vivid-orange: #ff6900;
-			--wp--preset--color--luminous-vivid-amber: #fcb900;
-			--wp--preset--color--light-green-cyan: #7bdcb5;
-			--wp--preset--color--vivid-green-cyan: #00d084;
-			--wp--preset--color--pale-cyan-blue: #8ed1fc;
-			--wp--preset--color--vivid-cyan-blue: #0693e3;
-			--wp--preset--color--vivid-purple: #9b51e0;
-			--wp--preset--color--green-primary: var(--wp--custom--color--green-primary);
-			--wp--preset--color--green-primary-40: var(--wp--custom--color--green-primary-40);
-			--wp--preset--color--green-100: var(--wp--custom--color--green-100);
-			--wp--preset--color--green-200: var(--wp--custom--color--green-200);
-			--wp--preset--color--green-300: var(--wp--custom--color--green-300);
-			--wp--preset--color--green-400: var(--wp--custom--color--green-400);
-			--wp--preset--color--green-500: var(--wp--custom--color--green-500);
-			--wp--preset--color--green-600: var(--wp--custom--color--green-600);
-			--wp--preset--color--purple-100: var(--wp--custom--color--purple-100);
-			--wp--preset--color--purple-200: var(--wp--custom--color--purple-200);
-			--wp--preset--color--purple-300: var(--wp--custom--color--purple-300);
-			--wp--preset--color--blue-100: var(--wp--custom--color--blue-100);
-			--wp--preset--color--blue-200: var(--wp--custom--color--blue-200);
-			--wp--preset--color--blue-300: var(--wp--custom--color--blue-300);
-			--wp--preset--color--gray-050: var(--wp--custom--color--gray-050);
-			--wp--preset--color--gray-100: var(--wp--custom--color--gray-100);
-			--wp--preset--color--gray-200: var(--wp--custom--color--gray-200);
-			--wp--preset--color--gray-300: var(--wp--custom--color--gray-300);
-			--wp--preset--color--gray-400: var(--wp--custom--color--gray-400);
-			--wp--preset--color--gray-500: var(--wp--custom--color--gray-500);
-			--wp--preset--color--gray-600: var(--wp--custom--color--gray-600);
-			--wp--preset--color--gray-700: var(--wp--custom--color--gray-700);
-			--wp--preset--color--gray-800: var(--wp--custom--color--gray-800);
-			--wp--preset--color--gray-900: var(--wp--custom--color--gray-900);
-			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
-					rgba(6, 147, 227, 1) 0%,
-					rgb(155, 81, 224) 100%);
-			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
-					rgb(122, 220, 180) 0%,
-					rgb(0, 208, 130) 100%);
-			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
-					rgba(252, 185, 0, 1) 0%,
-					rgba(255, 105, 0, 1) 100%);
-			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
-					rgba(255, 105, 0, 1) 0%,
-					rgb(207, 46, 46) 100%);
-			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
-					rgb(238, 238, 238) 0%,
-					rgb(169, 184, 195) 100%);
-			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
-					rgb(74, 234, 220) 0%,
-					rgb(151, 120, 209) 20%,
-					rgb(207, 42, 186) 40%,
-					rgb(238, 44, 130) 60%,
-					rgb(251, 105, 98) 80%,
-					rgb(254, 248, 76) 100%);
-			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
-					rgb(255, 206, 236) 0%,
-					rgb(152, 150, 240) 100%);
-			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
-					rgb(254, 205, 165) 0%,
-					rgb(254, 45, 45) 50%,
-					rgb(107, 0, 62) 100%);
-			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
-					rgb(255, 203, 112) 0%,
-					rgb(199, 81, 192) 50%,
-					rgb(65, 88, 208) 100%);
-			--wp--preset--gradient--pale-ocean: linear-gradient(135deg,
-					rgb(255, 245, 203) 0%,
-					rgb(182, 227, 212) 50%,
-					rgb(51, 167, 181) 100%);
-			--wp--preset--gradient--electric-grass: linear-gradient(135deg,
-					rgb(202, 248, 128) 0%,
-					rgb(113, 206, 126) 100%);
-			--wp--preset--gradient--midnight: linear-gradient(135deg,
-					rgb(2, 3, 129) 0%,
-					rgb(40, 116, 252) 100%);
-			--wp--preset--font-size--small: 13px;
-			--wp--preset--font-size--medium: 20px;
-			--wp--preset--font-size--large: 36px;
-			--wp--preset--font-size--x-large: 42px;
-			--wp--preset--font-size--3-xl: var(--wp--custom--font-sizes--36-56);
-			--wp--preset--font-size--2-xl: var(--wp--custom--font-sizes--32-46);
-			--wp--preset--font-size--xl: var(--wp--custom--font-sizes--28-38);
-			--wp--preset--font-size--l: var(--wp--custom--font-sizes--24-32);
-			--wp--preset--font-size--m: var(--wp--custom--font-sizes--22-28);
-			--wp--preset--font-size--s: var(--wp--custom--font-sizes--20-22);
-			--wp--preset--font-size--xs: var(--wp--custom--font-sizes--base);
-			--wp--preset--font-family--poppins: Poppins, serif;
-			--wp--preset--font-family--spline-sans: "Spline Sans";
-			--wp--preset--font-family--ibm-plex-mono: "IBM Plex Mono", monospace;
-			--wp--preset--font-family--redaction: Redaction, serif;
-			--wp--preset--font-family--redaction-10: "Redaction 10", serif;
-			--wp--preset--font-family--redaction-20: "Redaction 20", serif;
-			--wp--preset--font-family--redaction-35: "Redaction 35", serif;
-			--wp--preset--font-family--redaction-50: "Redaction 50", serif;
-			--wp--preset--font-family--redaction-70: "Redaction 70", serif;
-			--wp--preset--font-family--redaction-100: "Redaction 100", serif;
-			--wp--preset--spacing--20: 0.44rem;
-			--wp--preset--spacing--30: 0.67rem;
-			--wp--preset--spacing--40: 1rem;
-			--wp--preset--spacing--50: 1.5rem;
-			--wp--preset--spacing--60: var(--wp--custom--spacing--60);
-			--wp--preset--spacing--70: 3.38rem;
-			--wp--preset--spacing--80: var(--wp--custom--spacing--80);
-			--wp--preset--spacing--6: var(--wp--custom--spacing--6);
-			--wp--preset--spacing--8: var(--wp--custom--spacing--8);
-			--wp--preset--spacing--12: var(--wp--custom--spacing--12);
-			--wp--preset--spacing--s: var(--wp--custom--spacing--16);
-			--wp--preset--spacing--18: var(--wp--custom--spacing--18);
-			--wp--preset--spacing--24: var(--wp--custom--spacing--24);
-			--wp--preset--spacing--m: var(--wp--custom--spacing--32);
-			--wp--preset--spacing--36: var(--wp--custom--spacing--36);
-			--wp--preset--spacing--l: var(--wp--custom--spacing--48);
-			--wp--preset--spacing--xl: var(--wp--custom--spacing--64);
-			--wp--preset--spacing--72: var(--wp--custom--spacing--72);
-			--wp--preset--spacing--86: var(--wp--custom--spacing--86);
-			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-				6px 6px rgba(0, 0, 0, 1);
-			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-			--wp--custom--color--green-primary: hsla(130, 53%, 59%, 1);
-			--wp--custom--color--green-primary-40: hsla(130, 53%, 59%, 0.4);
-			--wp--custom--color--green-050: hsla(161, 43%, 49%, 1);
-			--wp--custom--color--green-100: hsla(49, 100%, 95%, 1);
-			--wp--custom--color--green-200: hsla(78, 89%, 86%, 1);
-			--wp--custom--color--green-300: hsla(78, 100%, 72%, 1);
-			--wp--custom--color--green-400: hsla(160, 73%, 43%, 1);
-			--wp--custom--color--green-400-alt: hsla(160, 86%, 26%, 1);
-			--wp--custom--color--green-500: hsla(181, 67%, 31%, 1);
-			--wp--custom--color--green-500-50: hsla(181, 67%, 31%, 0.5);
-			--wp--custom--color--green-600: hsla(179, 79%, 17%, 1);
-			--wp--custom--color--purple-100: hsla(240, 56%, 85%, 1);
-			--wp--custom--color--purple-200: hsla(240, 23%, 56%, 1);
-			--wp--custom--color--purple-300: hsla(240, 17%, 34%, 1);
-			--wp--custom--color--blue-100: hsla(183, 68%, 84%, 1);
-			--wp--custom--color--blue-200: hsla(201, 62%, 38%, 1);
-			--wp--custom--color--blue-300: hsla(202, 70%, 17%, 1);
-			--wp--custom--color--gray-050: hsla(195, 40%, 98%, 1);
-			--wp--custom--color--gray-100: hsla(195, 40%, 96%, 1);
-			--wp--custom--color--gray-200: hsla(193, 32%, 91%, 1);
-			--wp--custom--color--gray-300: hsla(191, 26%, 84%, 1);
-			--wp--custom--color--gray-400: hsla(192, 19%, 65%, 1);
-			--wp--custom--color--gray-500: hsla(191, 15%, 47%, 1);
-			--wp--custom--color--gray-600: hsla(191, 18%, 35%, 1);
-			--wp--custom--color--gray-700: hsla(191, 24%, 27%, 1);
-			--wp--custom--color--gray-800: hsla(192, 33%, 17%, 1);
-			--wp--custom--color--gray-900: hsla(191, 47%, 11%, 1);
-			--wp--custom--color--gray-light: hsla(0, 0%, 81%, 1);
-			--wp--custom--color--white: hsla(0, 0%, 100%, 1);
-			--wp--custom--color--off-white: hsla(195, 40%, 98%, 1);
-			--wp--custom--color--black: hsla(0, 0%, 0%, 1);
-			--wp--custom--color--red: hsl(13, 89%, 58%);
-			--wp--custom--color--tag-pink: hsla(284, 100%, 95%, 1);
-			--wp--custom--color--tag-blue: hsla(220, 100%, 94%, 1);
-			--wp--custom--color--tag-yellow: hsla(75, 100%, 89%, 1);
-			--wp--custom--color--tag-green: var(--wp--custom--color--green-primary-40);
-			--wp--custom--gradient--linear-transparent-to-light-blue: linear-gradient(to bottom,
-					transparent,
-					var(--wp--custom--color--blue-100));
-			--wp--custom--gradient--linear-white-to-green-200: linear-gradient(to bottom,
-					var(--wp--custom--color--white),
-					var(--wp--custom--color--green-200));
-			--wp--custom--gradient--linear-light-to-dark-blue-25: linear-gradient(to bottom,
-					transparent 70%,
-					var(--wp--custom--color--green-500-50) 85%,
-					var(--wp--custom--color--blue-300));
-			--wp--custom--gradient--linear-light-to-dark-blue-50: linear-gradient(to bottom,
-					transparent 50%,
-					var(--wp--custom--color--green-500-50) 75%,
-					var(--wp--custom--color--blue-300));
-			--wp--custom--gradient--linear-light-to-dark-blue-75: linear-gradient(to bottom,
-					transparent 30%,
-					var(--wp--custom--color--green-500-50) 65%,
-					var(--wp--custom--color--blue-300));
-			--wp--custom--gradient--linear-light-to-dark-blue: linear-gradient(to bottom,
-					transparent 0%,
-					var(--wp--custom--color--green-500-50) 40%,
-					var(--wp--custom--color--blue-300));
-			--wp--custom--gradient--linear-light-to-dark-blue-top-bottom: linear-gradient(to bottom,
-					var(--wp--custom--color--green-500-50),
-					transparent 25%,
-					transparent 70%,
-					var(--wp--custom--color--green-500-50) 85%,
-					var(--wp--custom--color--blue-300));
-			--wp--custom--gradient--linear-hor-dark-to-light-blue: linear-gradient(to right,
-					var(--wp--custom--color--blue-300),
-					var(--wp--custom--color--blue-100));
-			--wp--custom--gradient--linear-hor-dark-to-light-green: linear-gradient(to right,
-					var(--wp--custom--color--green-600),
-					var(--wp--custom--color--green-400));
-			--wp--custom--gradient--linear-angled-dark-to-light-green: linear-gradient(141deg,
-					var(--wp--custom--color--green-600),
-					var(--wp--custom--color--green-400));
-			--wp--custom--gradient--linear-angled-dark-to-light-green-alt: linear-gradient(141deg,
-					var(--wp--custom--color--green-600),
-					var(--wp--custom--color--green-400-alt));
-			--wp--custom--gradient--linear-90-dark-to-light-purple: linear-gradient(to right,
-					var(--wp--custom--color--purple-300),
-					var(--wp--custom--color--purple-100));
-			--wp--custom--gradient--linear-angled-dark-to-light-green-table: linear-gradient(279.82deg,
-					var(--wp--custom--color--green-050) -15.93%,
-					var(--wp--custom--color--green-600) 80.6%);
-			--wp--custom--layout--content: 800px;
-			--wp--custom--layout--wide: 1074px;
-			--wp--custom--layout--x-wide: 1140px;
-			--wp--custom--dropshadows--1: 0px 12px 10px hsla(0, 0%, 0%, 0.3);
-			--wp--custom--dropshadows--2: 0px 15px 25px hsla(194, 22%, 15%, 0.12);
-			--wp--custom--dropshadows--3: 0 7px 13px hsla(0, 0%, 0%, 0.1);
-			--wp--custom--dropshadows--sub-menu: 0px 5px 30px hsla(0, 0%, 0%, 0.25);
-			--wp--custom--dropshadows--table: 0px 4px 38px 13px rgba(0, 0, 0, 0.05);
-			--wp--custom--dropshadows--news-card: 0px 6px 12px -6px hsla(0, 0%, 0%, 0.3);
-			--wp--custom--dropshadows--news-card-hover: 0px 6px 48px -12px hsla(0, 0%, 0%, 0.2);
-			--wp--custom--dropshadows--tabs: 0px 12px 24px 0px rgba(0, 0, 0, 0.3);
-			--wp--custom--dropshadows--hero-thumbnail: 0px 25px 73px 0px hsla(0, 0%, 0%, 0.09);
-			--wp--custom--border--radius--base: 8px;
-			--wp--custom--border--radius--base-2-x: calc(2 * var(--wp--custom--border--radius--base));
-			--wp--custom--border--radius--base-3-x: calc(3 * var(--wp--custom--border--radius--base));
-			--wp--custom--border--radius--base-4-x: calc(4 * var(--wp--custom--border--radius--base));
-			--wp--custom--border--radius--base-6-x: calc(6 * var(--wp--custom--border--radius--base));
-			--wp--custom--font-sizes--36-56: clamp(2.25rem,
-					calc(1.81rem + 1.88vw),
-					3.5rem);
-			--wp--custom--font-sizes--32-46: clamp(2rem,
-					calc(1.69rem + 1.31vw),
-					2.88rem);
-			--wp--custom--font-sizes--28-38: clamp(1.75rem,
-					calc(1.53rem + 0.94vw),
-					2.38rem);
-			--wp--custom--font-sizes--24-32: clamp(1.5rem,
-					calc(1.32rem + 0.75vw),
-					2rem);
-			--wp--custom--font-sizes--22-28: clamp(1.38rem,
-					calc(1.24rem + 0.56vw),
-					1.75rem);
-			--wp--custom--font-sizes--20-22: clamp(1.25rem,
-					calc(1.21rem + 0.19vw),
-					1.38rem);
-			--wp--custom--font-sizes--base: 1.125rem;
-			--wp--custom--font-weight--reg: 400;
-			--wp--custom--font-weight--medium: 500;
-			--wp--custom--font-weight--semi: 600;
-			--wp--custom--font-weight--bold: 700;
-			--wp--custom--font-weight--black: 900;
-			--wp--custom--line-height--1: 1;
-			--wp--custom--line-height--1-1: 1.1;
-			--wp--custom--line-height--1-15: 1.15;
-			--wp--custom--line-height--1-2: 1.2;
-			--wp--custom--line-height--1-25: 1.25;
-			--wp--custom--line-height--1-3: 1.3;
-			--wp--custom--line-height--1-5: 1.5;
-			--wp--custom--spacing--6: 6px;
-			--wp--custom--spacing--8: 8px;
-			--wp--custom--spacing--12: 12px;
-			--wp--custom--spacing--16: 16px;
-			--wp--custom--spacing--18: 18px;
-			--wp--custom--spacing--24: 24px;
-			--wp--custom--spacing--32: 32px;
-			--wp--custom--spacing--36: 36px;
-			--wp--custom--spacing--40: 40px;
-			--wp--custom--spacing--48: 48px;
-			--wp--custom--spacing--60: 60px;
-			--wp--custom--spacing--64: 64px;
-			--wp--custom--spacing--72: 72px;
-			--wp--custom--spacing--80: 80px;
-			--wp--custom--spacing--86: 86px;
-			--wp--custom--transition--duration--base: 0.25s;
-			--wp--custom--transition--duration--base-2-x: calc(2 * var(--wp--custom--transition--duration--base));
-			--wp--custom--transition--timing--base: ease-in-out;
-			--wp--custom--transition--timing--menu-slide: cubic-bezier(0.3,
-					0,
-					0,
-					1);
-		}
-
-		.wp-block-chia-content-card {
-			--wp--preset--gradient--linear-transparent-to-light-blue: var(--wp--custom--gradient--linear-transparent-to-light-blue);
-			--wp--preset--gradient--linear-light-to-dark-blue-25: var(--wp--custom--gradient--linear-light-to-dark-blue-25);
-			--wp--preset--gradient--linear-light-to-dark-blue-50: var(--wp--custom--gradient--linear-light-to-dark-blue-50);
-			--wp--preset--gradient--linear-light-to-dark-blue-75: var(--wp--custom--gradient--linear-light-to-dark-blue-75);
-			--wp--preset--gradient--linear-light-to-dark-blue: var(--wp--custom--gradient--linear-light-to-dark-blue);
-			--wp--preset--gradient--linear-light-to-dark-blue-top-bottom: var(--wp--custom--gradient--linear-light-to-dark-blue-top-bottom);
-			--wp--preset--gradient--linear-hor-dark-to-light-blue: var(--wp--custom--gradient--linear-hor-dark-to-light-blue);
-			--wp--preset--gradient--linear-hor-dark-to-light-green: var(--wp--custom--gradient--linear-hor-dark-to-light-green);
-			--wp--preset--gradient--linear-angled-dark-to-light-green: var(--wp--custom--gradient--linear-angled-dark-to-light-green);
-			--wp--preset--gradient--linear-white-to-green-200: var(--wp--custom--gradient--linear-white-to-green-200);
-		}
-
-		.wp-block-group {
-			--wp--preset--gradient--linear-transparent-to-light-blue: var(--wp--custom--gradient--linear-transparent-to-light-blue);
-			--wp--preset--gradient--linear-light-to-dark-blue-25: var(--wp--custom--gradient--linear-light-to-dark-blue-25);
-			--wp--preset--gradient--linear-light-to-dark-blue-50: var(--wp--custom--gradient--linear-light-to-dark-blue-50);
-			--wp--preset--gradient--linear-light-to-dark-blue-75: var(--wp--custom--gradient--linear-light-to-dark-blue-75);
-			--wp--preset--gradient--linear-light-to-dark-blue: var(--wp--custom--gradient--linear-light-to-dark-blue);
-			--wp--preset--gradient--linear-light-to-dark-blue-top-bottom: var(--wp--custom--gradient--linear-light-to-dark-blue-top-bottom);
-			--wp--preset--gradient--linear-hor-dark-to-light-blue: var(--wp--custom--gradient--linear-hor-dark-to-light-blue);
-			--wp--preset--gradient--linear-hor-dark-to-light-green: var(--wp--custom--gradient--linear-hor-dark-to-light-green);
-			--wp--preset--gradient--linear-angled-dark-to-light-green: var(--wp--custom--gradient--linear-angled-dark-to-light-green);
-			--wp--preset--gradient--linear-white-to-green-200: var(--wp--custom--gradient--linear-white-to-green-200);
-		}
-
-		.wp-block-chia-hero {
-			--wp--preset--gradient--linear-hor-dark-to-light-green: var(--wp--custom--gradient--linear-hor-dark-to-light-green);
-			--wp--preset--gradient--linear-hor-dark-to-light-blue: var(--wp--custom--gradient--linear-hor-dark-to-light-blue);
-			--wp--preset--gradient--linear-90-dark-to-light-purple: var(--wp--custom--gradient--linear-90-dark-to-light-purple);
-		}
-
-		.wp-block-table>table {
-			--wp--preset--gradient--linear-angled-dark-to-light-green-table: var(--wp--custom--gradient--linear-angled-dark-to-light-green-table);
-		}
-
-		.wp-block-chia-tabs {
-			--wp--custom--chia--max-number-of-tabs: 5;
-		}
-
-		body {
-			margin: 0;
-			--wp--style--global--content-size: var(--default-width);
-			--wp--style--global--wide-size: var(--wide-width);
-		}
-
-		.wp-site-blocks>.alignleft {
-			float: left;
-			margin-right: 2em;
-		}
-
-		.wp-site-blocks>.alignright {
-			float: right;
-			margin-left: 2em;
-		}
-
-		.wp-site-blocks>.aligncenter {
-			justify-content: center;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		:where(.wp-site-blocks)>* {
-			margin-block-start: 24px;
-			margin-block-end: 0;
-		}
-
-		:where(.wp-site-blocks)> :first-child:first-child {
-			margin-block-start: 0;
-		}
-
-		:where(.wp-site-blocks)> :last-child:last-child {
-			margin-block-end: 0;
-		}
-
-		body {
-			--wp--style--block-gap: 24px;
-		}
-
-		:where(body .is-layout-flow)> :first-child:first-child {
-			margin-block-start: 0;
-		}
-
-		:where(body .is-layout-flow)> :last-child:last-child {
-			margin-block-end: 0;
-		}
-
-		:where(body .is-layout-flow)>* {
-			margin-block-start: 24px;
-			margin-block-end: 0;
-		}
-
-		:where(body .is-layout-constrained)> :first-child:first-child {
-			margin-block-start: 0;
-		}
-
-		:where(body .is-layout-constrained)> :last-child:last-child {
-			margin-block-end: 0;
-		}
-
-		:where(body .is-layout-constrained)>* {
-			margin-block-start: 24px;
-			margin-block-end: 0;
-		}
-
-		:where(body .is-layout-flex) {
-			gap: 24px;
-		}
-
-		:where(body .is-layout-grid) {
-			gap: 24px;
-		}
-
-		body .is-layout-flow>.alignleft {
-			float: left;
-			margin-inline-start: 0;
-			margin-inline-end: 2em;
-		}
-
-		body .is-layout-flow>.alignright {
-			float: right;
-			margin-inline-start: 2em;
-			margin-inline-end: 0;
-		}
-
-		body .is-layout-flow>.aligncenter {
-			margin-left: auto !important;
-			margin-right: auto !important;
-		}
-
-		body .is-layout-constrained>.alignleft {
-			float: left;
-			margin-inline-start: 0;
-			margin-inline-end: 2em;
-		}
-
-		body .is-layout-constrained>.alignright {
-			float: right;
-			margin-inline-start: 2em;
-			margin-inline-end: 0;
-		}
-
-		body .is-layout-constrained>.aligncenter {
-			margin-left: auto !important;
-			margin-right: auto !important;
-		}
-
-		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-			max-width: var(--wp--style--global--content-size);
-			margin-left: auto !important;
-			margin-right: auto !important;
-		}
-
-		body .is-layout-constrained>.alignwide {
-			max-width: var(--wp--style--global--wide-size);
-		}
-
-		body .is-layout-flex {
-			display: flex;
-		}
-
-		body .is-layout-flex {
-			flex-wrap: wrap;
-			align-items: center;
-		}
-
-		body .is-layout-flex>* {
-			margin: 0;
-		}
-
-		body .is-layout-grid {
-			display: grid;
-		}
-
-		body .is-layout-grid>* {
-			margin: 0;
-		}
-
-		body {
-			padding-top: 0px;
-			padding-right: 0px;
-			padding-bottom: 0px;
-			padding-left: 0px;
-		}
-
-		a:where(:not(.wp-element-button)) {
-			text-decoration: underline;
-		}
-
-		.wp-element-button,
-		.wp-block-button__link {
-			background-color: #32373c;
-			border-width: 0;
-			color: #fff;
-			font-family: inherit;
-			font-size: inherit;
-			line-height: inherit;
-			padding: calc(0.667em + 2px) calc(1.333em + 2px);
-			text-decoration: none;
-		}
-
-		.has-black-color {
-			color: var(--wp--preset--color--black) !important;
-		}
-
-		.has-cyan-bluish-gray-color {
-			color: var(--wp--preset--color--cyan-bluish-gray) !important;
-		}
-
-		.has-white-color {
-			color: var(--wp--preset--color--white) !important;
-		}
-
-		.has-pale-pink-color {
-			color: var(--wp--preset--color--pale-pink) !important;
-		}
-
-		.has-vivid-red-color {
-			color: var(--wp--preset--color--vivid-red) !important;
-		}
-
-		.has-luminous-vivid-orange-color {
-			color: var(--wp--preset--color--luminous-vivid-orange) !important;
-		}
-
-		.has-luminous-vivid-amber-color {
-			color: var(--wp--preset--color--luminous-vivid-amber) !important;
-		}
-
-		.has-light-green-cyan-color {
-			color: var(--wp--preset--color--light-green-cyan) !important;
-		}
-
-		.has-vivid-green-cyan-color {
-			color: var(--wp--preset--color--vivid-green-cyan) !important;
-		}
-
-		.has-pale-cyan-blue-color {
-			color: var(--wp--preset--color--pale-cyan-blue) !important;
-		}
-
-		.has-vivid-cyan-blue-color {
-			color: var(--wp--preset--color--vivid-cyan-blue) !important;
-		}
-
-		.has-vivid-purple-color {
-			color: var(--wp--preset--color--vivid-purple) !important;
-		}
-
-		.has-green-primary-color {
-			color: var(--wp--preset--color--green-primary) !important;
-		}
-
-		.has-green-primary-40-color {
-			color: var(--wp--preset--color--green-primary-40) !important;
-		}
-
-		.has-green-100-color {
-			color: var(--wp--preset--color--green-100) !important;
-		}
-
-		.has-green-200-color {
-			color: var(--wp--preset--color--green-200) !important;
-		}
-
-		.has-green-300-color {
-			color: var(--wp--preset--color--green-300) !important;
-		}
-
-		.has-green-400-color {
-			color: var(--wp--preset--color--green-400) !important;
-		}
-
-		.has-green-500-color {
-			color: var(--wp--preset--color--green-500) !important;
-		}
-
-		.has-green-600-color {
-			color: var(--wp--preset--color--green-600) !important;
-		}
-
-		.has-purple-100-color {
-			color: var(--wp--preset--color--purple-100) !important;
-		}
-
-		.has-purple-200-color {
-			color: var(--wp--preset--color--purple-200) !important;
-		}
-
-		.has-purple-300-color {
-			color: var(--wp--preset--color--purple-300) !important;
-		}
-
-		.has-blue-100-color {
-			color: var(--wp--preset--color--blue-100) !important;
-		}
-
-		.has-blue-200-color {
-			color: var(--wp--preset--color--blue-200) !important;
-		}
-
-		.has-blue-300-color {
-			color: var(--wp--preset--color--blue-300) !important;
-		}
-
-		.has-gray-050-color {
-			color: var(--wp--preset--color--gray-050) !important;
-		}
-
-		.has-gray-100-color {
-			color: var(--wp--preset--color--gray-100) !important;
-		}
-
-		.has-gray-200-color {
-			color: var(--wp--preset--color--gray-200) !important;
-		}
-
-		.has-gray-300-color {
-			color: var(--wp--preset--color--gray-300) !important;
-		}
-
-		.has-gray-400-color {
-			color: var(--wp--preset--color--gray-400) !important;
-		}
-
-		.has-gray-500-color {
-			color: var(--wp--preset--color--gray-500) !important;
-		}
-
-		.has-gray-600-color {
-			color: var(--wp--preset--color--gray-600) !important;
-		}
-
-		.has-gray-700-color {
-			color: var(--wp--preset--color--gray-700) !important;
-		}
-
-		.has-gray-800-color {
-			color: var(--wp--preset--color--gray-800) !important;
-		}
-
-		.has-gray-900-color {
-			color: var(--wp--preset--color--gray-900) !important;
-		}
-
-		.has-black-background-color {
-			background-color: var(--wp--preset--color--black) !important;
-		}
-
-		.has-cyan-bluish-gray-background-color {
-			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-		}
-
-		.has-white-background-color {
-			background-color: var(--wp--preset--color--white) !important;
-		}
-
-		.has-pale-pink-background-color {
-			background-color: var(--wp--preset--color--pale-pink) !important;
-		}
-
-		.has-vivid-red-background-color {
-			background-color: var(--wp--preset--color--vivid-red) !important;
-		}
-
-		.has-luminous-vivid-orange-background-color {
-			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-		}
-
-		.has-luminous-vivid-amber-background-color {
-			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-		}
-
-		.has-light-green-cyan-background-color {
-			background-color: var(--wp--preset--color--light-green-cyan) !important;
-		}
-
-		.has-vivid-green-cyan-background-color {
-			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-		}
-
-		.has-pale-cyan-blue-background-color {
-			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-		}
-
-		.has-vivid-cyan-blue-background-color {
-			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-		}
-
-		.has-vivid-purple-background-color {
-			background-color: var(--wp--preset--color--vivid-purple) !important;
-		}
-
-		.has-green-primary-background-color {
-			background-color: var(--wp--preset--color--green-primary) !important;
-		}
-
-		.has-green-primary-40-background-color {
-			background-color: var(--wp--preset--color--green-primary-40) !important;
-		}
-
-		.has-green-100-background-color {
-			background-color: var(--wp--preset--color--green-100) !important;
-		}
-
-		.has-green-200-background-color {
-			background-color: var(--wp--preset--color--green-200) !important;
-		}
-
-		.has-green-300-background-color {
-			background-color: var(--wp--preset--color--green-300) !important;
-		}
-
-		.has-green-400-background-color {
-			background-color: var(--wp--preset--color--green-400) !important;
-		}
-
-		.has-green-500-background-color {
-			background-color: var(--wp--preset--color--green-500) !important;
-		}
-
-		.has-green-600-background-color {
-			background-color: var(--wp--preset--color--green-600) !important;
-		}
-
-		.has-purple-100-background-color {
-			background-color: var(--wp--preset--color--purple-100) !important;
-		}
-
-		.has-purple-200-background-color {
-			background-color: var(--wp--preset--color--purple-200) !important;
-		}
-
-		.has-purple-300-background-color {
-			background-color: var(--wp--preset--color--purple-300) !important;
-		}
-
-		.has-blue-100-background-color {
-			background-color: var(--wp--preset--color--blue-100) !important;
-		}
-
-		.has-blue-200-background-color {
-			background-color: var(--wp--preset--color--blue-200) !important;
-		}
-
-		.has-blue-300-background-color {
-			background-color: var(--wp--preset--color--blue-300) !important;
-		}
-
-		.has-gray-050-background-color {
-			background-color: var(--wp--preset--color--gray-050) !important;
-		}
-
-		.has-gray-100-background-color {
-			background-color: var(--wp--preset--color--gray-100) !important;
-		}
-
-		.has-gray-200-background-color {
-			background-color: var(--wp--preset--color--gray-200) !important;
-		}
-
-		.has-gray-300-background-color {
-			background-color: var(--wp--preset--color--gray-300) !important;
-		}
-
-		.has-gray-400-background-color {
-			background-color: var(--wp--preset--color--gray-400) !important;
-		}
-
-		.has-gray-500-background-color {
-			background-color: var(--wp--preset--color--gray-500) !important;
-		}
-
-		.has-gray-600-background-color {
-			background-color: var(--wp--preset--color--gray-600) !important;
-		}
-
-		.has-gray-700-background-color {
-			background-color: var(--wp--preset--color--gray-700) !important;
-		}
-
-		.has-gray-800-background-color {
-			background-color: var(--wp--preset--color--gray-800) !important;
-		}
-
-		.has-gray-900-background-color {
-			background-color: var(--wp--preset--color--gray-900) !important;
-		}
-
-		.has-black-border-color {
-			border-color: var(--wp--preset--color--black) !important;
-		}
-
-		.has-cyan-bluish-gray-border-color {
-			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-		}
-
-		.has-white-border-color {
-			border-color: var(--wp--preset--color--white) !important;
-		}
-
-		.has-pale-pink-border-color {
-			border-color: var(--wp--preset--color--pale-pink) !important;
-		}
-
-		.has-vivid-red-border-color {
-			border-color: var(--wp--preset--color--vivid-red) !important;
-		}
-
-		.has-luminous-vivid-orange-border-color {
-			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-		}
-
-		.has-luminous-vivid-amber-border-color {
-			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-		}
-
-		.has-light-green-cyan-border-color {
-			border-color: var(--wp--preset--color--light-green-cyan) !important;
-		}
-
-		.has-vivid-green-cyan-border-color {
-			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-		}
-
-		.has-pale-cyan-blue-border-color {
-			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-		}
-
-		.has-vivid-cyan-blue-border-color {
-			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-		}
-
-		.has-vivid-purple-border-color {
-			border-color: var(--wp--preset--color--vivid-purple) !important;
-		}
-
-		.has-green-primary-border-color {
-			border-color: var(--wp--preset--color--green-primary) !important;
-		}
-
-		.has-green-primary-40-border-color {
-			border-color: var(--wp--preset--color--green-primary-40) !important;
-		}
-
-		.has-green-100-border-color {
-			border-color: var(--wp--preset--color--green-100) !important;
-		}
-
-		.has-green-200-border-color {
-			border-color: var(--wp--preset--color--green-200) !important;
-		}
-
-		.has-green-300-border-color {
-			border-color: var(--wp--preset--color--green-300) !important;
-		}
-
-		.has-green-400-border-color {
-			border-color: var(--wp--preset--color--green-400) !important;
-		}
-
-		.has-green-500-border-color {
-			border-color: var(--wp--preset--color--green-500) !important;
-		}
-
-		.has-green-600-border-color {
-			border-color: var(--wp--preset--color--green-600) !important;
-		}
-
-		.has-purple-100-border-color {
-			border-color: var(--wp--preset--color--purple-100) !important;
-		}
-
-		.has-purple-200-border-color {
-			border-color: var(--wp--preset--color--purple-200) !important;
-		}
-
-		.has-purple-300-border-color {
-			border-color: var(--wp--preset--color--purple-300) !important;
-		}
-
-		.has-blue-100-border-color {
-			border-color: var(--wp--preset--color--blue-100) !important;
-		}
-
-		.has-blue-200-border-color {
-			border-color: var(--wp--preset--color--blue-200) !important;
-		}
-
-		.has-blue-300-border-color {
-			border-color: var(--wp--preset--color--blue-300) !important;
-		}
-
-		.has-gray-050-border-color {
-			border-color: var(--wp--preset--color--gray-050) !important;
-		}
-
-		.has-gray-100-border-color {
-			border-color: var(--wp--preset--color--gray-100) !important;
-		}
-
-		.has-gray-200-border-color {
-			border-color: var(--wp--preset--color--gray-200) !important;
-		}
-
-		.has-gray-300-border-color {
-			border-color: var(--wp--preset--color--gray-300) !important;
-		}
-
-		.has-gray-400-border-color {
-			border-color: var(--wp--preset--color--gray-400) !important;
-		}
-
-		.has-gray-500-border-color {
-			border-color: var(--wp--preset--color--gray-500) !important;
-		}
-
-		.has-gray-600-border-color {
-			border-color: var(--wp--preset--color--gray-600) !important;
-		}
-
-		.has-gray-700-border-color {
-			border-color: var(--wp--preset--color--gray-700) !important;
-		}
-
-		.has-gray-800-border-color {
-			border-color: var(--wp--preset--color--gray-800) !important;
-		}
-
-		.has-gray-900-border-color {
-			border-color: var(--wp--preset--color--gray-900) !important;
-		}
-
-		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-		}
-
-		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-		}
-
-		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-		}
-
-		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
-			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-		}
-
-		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-		}
-
-		.has-cool-to-warm-spectrum-gradient-background {
-			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-		}
-
-		.has-blush-light-purple-gradient-background {
-			background: var(--wp--preset--gradient--blush-light-purple) !important;
-		}
-
-		.has-blush-bordeaux-gradient-background {
-			background: var(--wp--preset--gradient--blush-bordeaux) !important;
-		}
-
-		.has-luminous-dusk-gradient-background {
-			background: var(--wp--preset--gradient--luminous-dusk) !important;
-		}
-
-		.has-pale-ocean-gradient-background {
-			background: var(--wp--preset--gradient--pale-ocean) !important;
-		}
-
-		.has-electric-grass-gradient-background {
-			background: var(--wp--preset--gradient--electric-grass) !important;
-		}
-
-		.has-midnight-gradient-background {
-			background: var(--wp--preset--gradient--midnight) !important;
-		}
-
-		.has-small-font-size {
-			font-size: var(--wp--preset--font-size--small) !important;
-		}
-
-		.has-medium-font-size {
-			font-size: var(--wp--preset--font-size--medium) !important;
-		}
-
-		.has-large-font-size {
-			font-size: var(--wp--preset--font-size--large) !important;
-		}
-
-		.has-x-large-font-size {
-			font-size: var(--wp--preset--font-size--x-large) !important;
-		}
-
-		.has-3-xl-font-size {
-			font-size: var(--wp--preset--font-size--3-xl) !important;
-		}
-
-		.has-2-xl-font-size {
-			font-size: var(--wp--preset--font-size--2-xl) !important;
-		}
-
-		.has-xl-font-size {
-			font-size: var(--wp--preset--font-size--xl) !important;
-		}
-
-		.has-l-font-size {
-			font-size: var(--wp--preset--font-size--l) !important;
-		}
-
-		.has-m-font-size {
-			font-size: var(--wp--preset--font-size--m) !important;
-		}
-
-		.has-s-font-size {
-			font-size: var(--wp--preset--font-size--s) !important;
-		}
-
-		.has-xs-font-size {
-			font-size: var(--wp--preset--font-size--xs) !important;
-		}
-
-		.has-poppins-font-family {
-			font-family: var(--wp--preset--font-family--poppins) !important;
-		}
-
-		.has-spline-sans-font-family {
-			font-family: var(--wp--preset--font-family--spline-sans) !important;
-		}
-
-		.has-ibm-plex-mono-font-family {
-			font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;
-		}
-
-		.has-redaction-font-family {
-			font-family: var(--wp--preset--font-family--redaction) !important;
-		}
-
-		.has-redaction-10-font-family {
-			font-family: var(--wp--preset--font-family--redaction-10) !important;
-		}
-
-		.has-redaction-20-font-family {
-			font-family: var(--wp--preset--font-family--redaction-20) !important;
-		}
-
-		.has-redaction-35-font-family {
-			font-family: var(--wp--preset--font-family--redaction-35) !important;
-		}
-
-		.has-redaction-50-font-family {
-			font-family: var(--wp--preset--font-family--redaction-50) !important;
-		}
-
-		.has-redaction-70-font-family {
-			font-family: var(--wp--preset--font-family--redaction-70) !important;
-		}
-
-		.has-redaction-100-font-family {
-			font-family: var(--wp--preset--font-family--redaction-100) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-transparent-to-light-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-transparent-to-light-blue) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-light-to-dark-blue-25-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-25) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-light-to-dark-blue-50-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-50) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-light-to-dark-blue-75-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-75) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-light-to-dark-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-light-to-dark-blue-top-bottom-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-top-bottom) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-hor-dark-to-light-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-blue) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-hor-dark-to-light-green-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-green) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-angled-dark-to-light-green-gradient-background {
-			background: var(--wp--preset--gradient--linear-angled-dark-to-light-green) !important;
-		}
-
-		.wp-block-chia-content-card.has-linear-white-to-green-200-gradient-background {
-			background: var(--wp--preset--gradient--linear-white-to-green-200) !important;
-		}
-
-		.wp-block-group.has-linear-transparent-to-light-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-transparent-to-light-blue) !important;
-		}
-
-		.wp-block-group.has-linear-light-to-dark-blue-25-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-25) !important;
-		}
-
-		.wp-block-group.has-linear-light-to-dark-blue-50-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-50) !important;
-		}
-
-		.wp-block-group.has-linear-light-to-dark-blue-75-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-75) !important;
-		}
-
-		.wp-block-group.has-linear-light-to-dark-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue) !important;
-		}
-
-		.wp-block-group.has-linear-light-to-dark-blue-top-bottom-gradient-background {
-			background: var(--wp--preset--gradient--linear-light-to-dark-blue-top-bottom) !important;
-		}
-
-		.wp-block-group.has-linear-hor-dark-to-light-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-blue) !important;
-		}
-
-		.wp-block-group.has-linear-hor-dark-to-light-green-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-green) !important;
-		}
-
-		.wp-block-group.has-linear-angled-dark-to-light-green-gradient-background {
-			background: var(--wp--preset--gradient--linear-angled-dark-to-light-green) !important;
-		}
-
-		.wp-block-group.has-linear-white-to-green-200-gradient-background {
-			background: var(--wp--preset--gradient--linear-white-to-green-200) !important;
-		}
-
-		.wp-block-chia-hero.has-linear-hor-dark-to-light-green-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-green) !important;
-		}
-
-		.wp-block-chia-hero.has-linear-hor-dark-to-light-blue-gradient-background {
-			background: var(--wp--preset--gradient--linear-hor-dark-to-light-blue) !important;
-		}
-
-		.wp-block-chia-hero.has-linear-90-dark-to-light-purple-gradient-background {
-			background: var(--wp--preset--gradient--linear-90-dark-to-light-purple) !important;
-		}
-
-		.wp-block-table>table.has-linear-angled-dark-to-light-green-table-gradient-background {
-			background: var(--wp--preset--gradient--linear-angled-dark-to-light-green-table) !important;
-		}
-
-		.wp-block-navigation a:where(:not(.wp-element-button)) {
-			color: inherit;
-		}
-
-		.wp-block-pullquote {
-			font-size: 1.5em;
-			line-height: 1.6;
-		}
-
-		.wp-block-chia-content-card {
-			background-color: var(--wp--custom--color--gray-200);
-		}
-	</style>
 	<link rel="stylesheet" id="chia_plugin_shared-css"
-		href="./assets/wp-content/mu-plugins/chia-wp-plugin/dist/css/shared.css?ver=1.1.0" type="text/css"
-		media="all" />
+		href="./assets/wp-content/mu-plugins/chia-wp-plugin/dist/css/shared.css?ver=1.1.0" type="text/css" media="all">
 	<link rel="stylesheet" id="chia_plugin_frontend-css"
 		href="./assets/wp-content/mu-plugins/chia-wp-plugin/dist/css/frontend.css?ver=1.1.0" type="text/css"
-		media="all" />
+		media="all">
 	<link rel="stylesheet" id="tenup-block-library-frontend-content-grid-styles-css"
 		href="./assets/wp-content/plugins/block-library/dist/css/frontend-content-grid-styles.css?ver=fb8dceb33da2e6c8db6f5a1e3aa966a5"
-		type="text/css" media="all" />
+		type="text/css" media="all">
 	<link rel="stylesheet" id="tenup-block-library-frontend-button-styles-css"
 		href="./assets/wp-content/plugins/block-library/dist/css/frontend-button-styles.css?ver=924a933ca7779d4d21c38175e5bf2e91"
-		type="text/css" media="all" />
+		type="text/css" media="all">
 	<link rel="stylesheet" id="tenup-block-library-frontend-content-slider-styles-css"
 		href="./assets/wp-content/plugins/block-library/dist/css/frontend-content-slider-styles.css?ver=eb980f462d1edb3d2f7a161ce338cc5f"
-		type="text/css" media="all" />
+		type="text/css" media="all">
 	<link rel="stylesheet" id="dashicons-css" href="./assets/wp-includes/css/dashicons.min.css?ver=6.4.2"
-		type="text/css" media="all" />
+		type="text/css" media="all">
 	<link rel="stylesheet" id="styles-css"
 		href="./assets/wp-content/themes/chia-theme/dist/css/frontend.css?ver=2040784ce0e55f574870" type="text/css"
-		media="all" />
+		media="all">
 	<link rel="stylesheet" id="refresh-css"
 		href="./assets/wp-content/themes/chia-theme/dist/css/refresh.css?ver=69e18b02c7d5da1982e6" type="text/css"
-		media="all" />
+		media="all">
+
+	<link rel="stylesheet" id="custom-style" href="./assets/css/style.css" type="text/css" media="all">
 	<script type="text/javascript" src="./assets/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
 		id="jquery-core-js"></script>
 	<script type="text/javascript" src="./assets/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
@@ -1264,454 +72,264 @@
 	<script type="text/javascript" src="./assets/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1"
 		id="wp-hooks-js"></script>
 
-	<link rel="shortlink" href="https://www.kxgcoin.com/" />
+	<link rel="shortlink" href="https://www.kxgcoin.com/">
+
+	<link rel="icon" href="./assets/wp-content/uploads/2023/01/favicon.ico">
+	<link rel="icon" href="./assets/wp-content/uploads/2023/01/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" href="./assets/wp-content/uploads/2023/01/android-chrome-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" href="./assets/wp-content/uploads/2023/01/android-chrome-192x192.png">
 
 
-	<style id="wp-fonts-local" type="text/css">
-		@font-face {
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Poppins/Poppins-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 500;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Poppins/Poppins-Medium.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 600;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Poppins/Poppins-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 900;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Poppins/Poppins-Black.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Spline Sans";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/SplineSans/SplineSans-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Spline Sans";
-			font-style: normal;
-			font-weight: 500;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/SplineSans/SplineSans-Medium.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Spline Sans";
-			font-style: normal;
-			font-weight: 600;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/SplineSans/SplineSans-SemiBold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Spline Sans";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/SplineSans/SplineSans-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "IBM Plex Mono";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/IBMPlexMono/IBMPlexMono-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "IBM Plex Mono";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/IBMPlexMono/IBMPlexMono-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "IBM Plex Mono";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/IBMPlexMono/IBMPlexMono-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "IBM Plex Mono";
-			font-style: italic;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/IBMPlexMono/IBMPlexMono-BoldItalic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Redaction;
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Redaction;
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: Redaction;
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 10";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction10-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 10";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction10-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 10";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction10-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 20";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction20-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 20";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction20-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 20";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction20-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 35";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction35-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 35";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction35-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 35";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction35-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 50";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction50-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 50";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction50-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 50";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction50-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 70";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction70-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 70";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction70-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 70";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction70-Bold.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 100";
-			font-style: normal;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction100-Regular.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 100";
-			font-style: italic;
-			font-weight: 400;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction100-Italic.woff2") format("woff2");
-		}
-
-		@font-face {
-			font-family: "Redaction 100";
-			font-style: normal;
-			font-weight: 700;
-			font-display: block;
-			src: url("./assets/wp-content/themes/chia-theme/assets/fonts/Redaction/Redaction100-Bold.woff2") format("woff2");
-		}
-	</style>
-	<link rel="icon" href="./assets/wp-content/uploads/2023/01/favicon.ico" />
-	<link rel="icon" href="./assets/wp-content/uploads/2023/01/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" href="./assets/wp-content/uploads/2023/01/android-chrome-192x192.png" sizes="192x192" />
-	<link rel="apple-touch-icon" href="./assets/wp-content/uploads/2023/01/android-chrome-192x192.png" />
-	<style id="wpforms-css-vars-root">
-		:root {
-			--wpforms-field-border-radius: 3px;
-			--wpforms-field-background-color: #ffffff;
-			--wpforms-field-border-color: rgba(0, 0, 0, 0.25);
-			--wpforms-field-text-color: rgba(0, 0, 0, 0.7);
-			--wpforms-label-color: rgba(0, 0, 0, 0.85);
-			--wpforms-label-sublabel-color: rgba(0, 0, 0, 0.55);
-			--wpforms-label-error-color: #d63637;
-			--wpforms-button-border-radius: 3px;
-			--wpforms-button-background-color: #066aab;
-			--wpforms-button-text-color: #ffffff;
-			--wpforms-field-size-input-height: 43px;
-			--wpforms-field-size-input-spacing: 15px;
-			--wpforms-field-size-font-size: 16px;
-			--wpforms-field-size-line-height: 19px;
-			--wpforms-field-size-padding-h: 14px;
-			--wpforms-field-size-checkbox-size: 16px;
-			--wpforms-field-size-sublabel-spacing: 5px;
-			--wpforms-field-size-icon-size: 1;
-			--wpforms-label-size-font-size: 16px;
-			--wpforms-label-size-line-height: 19px;
-			--wpforms-label-size-sublabel-font-size: 14px;
-			--wpforms-label-size-sublabel-line-height: 17px;
-			--wpforms-button-size-font-size: 17px;
-			--wpforms-button-size-height: 41px;
-			--wpforms-button-size-padding-h: 15px;
-			--wpforms-button-size-margin-top: 10px;
-		}
-	</style>
 	<style>
-		.content-info__logo {
-			width: 100px;
-			height: 100px;
+		.Typewriter__cursor {
+			-webkit-animation: Typewriter-cursor 1s infinite;
+			animation: Typewriter-cursor 1s infinite;
+			margin-left: 1px
 		}
 
-		.site-branding img {
-			width: 40px;
-			height: 40px;
+		@-webkit-keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
+		}
+
+		@keyframes Typewriter-cursor {
+			0% {
+				opacity: 0
+			}
+
+			50% {
+				opacity: 1
+			}
+
+			100% {
+				opacity: 0
+			}
 		}
 	</style>
+	<link type="text/css" rel="stylesheet" charset="UTF-8"
+		href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css">
 </head>
 
 <body
-	class="home page-template page-template-templates page-template-refresh-style page-template-templatesrefresh-style-php page page-id-3979 wp-custom-logo jps-theme-chia-theme has-post-thumbnail">
+	class="home page-template page-template-templates page-template-refresh-style page-template-templatesrefresh-style-php page page-id-3979 wp-custom-logo jps-theme-chia-theme has-post-thumbnail is-mobile"
+	cz-shortcut-listen="true">
+	<script id="__bs_script__">//<![CDATA[
+		(function () {
+			try {
+				var script = document.createElement('script');
+				if ('async') {
+					script.async = true;
+				}
+				script.src = '/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+				if (document.body) {
+					document.body.appendChild(script);
+				} else if (document.head) {
+					document.head.appendChild(script);
+				}
+			} catch (e) {
+				console.error("Browsersync: could not append script tag", e);
+			}
+		})()
+		//]]></script>
+	<script async="" src="/browser-sync/browser-sync-client.js?v=2.29.3"></script>
+
 	<a href="#main" class="skip-to-content-link visually-hidden-focusable">
-		Skip to content
+		<font style="vertical-align: inherit;">
+			<font style="vertical-align: inherit;">
+				跳至内容
+			</font>
+		</font>
 	</a>
 
 	<header class="site-header">
 		<div class="site-header__container">
-			<nav id="main-menu" class="main-menu" role="navigation" itemscope="itemscope" aria-label="Primary Menu		">
+			<nav id="main-menu" class="main-menu" role="navigation" itemscope="itemscope" aria-label="主菜单		">
 				<div class="site-branding">
 					<a href="#" class="custom-logo-link" rel="home" aria-current="page">
-						<img src="./assets/wp-content/uploads/2023/01/logo.png" class="custom-logo" alt="KXG Network"
-							decoding="async" />
+						<img src="./assets/wp-content/uploads/2023/01/logo.png" class="custom-logo" alt="开行网"
+							decoding="async">
 					</a>
 					<div class="menu-toggle">
 						<button class="menu-toggle__button">
-							Menu
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									菜单
+								</font>
+							</font><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12">
 								<path
-									d="M1 12a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Zm0-5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Zm0-5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z" />
+									d="M1 12a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Zm0-5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Zm0-5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z">
+								</path>
 							</svg>
 						</button>
 					</div>
 				</div>
-				<ul id="primary_menu" class="primary-menu">
+				<ul id="primary_menu" class="primary-menu" aria-expanded="false">
 					<li class="menu-close">
 						<button class="menu-close__button">
-							Close
-							<?xml version="1.0"?>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									关闭
+								</font>
+							</font><!--?xml version="1.0"?-->
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="16" height="16" viewBox="0 0 16 16">
 								<path id="Path_33" data-name="Path 33"
 									d="M12.619,14.107l-5.2-5.2-5.2,5.2A1.052,1.052,0,0,1,.723,12.619l5.2-5.2-5.2-5.2A1.051,1.051,0,0,1,2.21.723l5.2,5.2,5.2-5.205A1.052,1.052,0,0,1,14.107,2.21l-5.2,5.2,5.2,5.2a1.052,1.052,0,0,1-1.488,1.488Z"
-									transform="translate(0.586 0.586)" />
+									transform="translate(0.586 0.586)"></path>
 							</svg>
 						</button>
 					</li>
 					<li id="menu-item-4410"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-mega-menu is-mega-menu-featured">
-						<a href="#">Learn</a>
-						<ul class="sub-menu">
+						<a href="#" aria-expanded="false">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">学习</font>
+							</font>
+						</a>
+						<ul class="sub-menu" aria-expanded="false">
 							<li class="menu-back">
 								<button class="menu-back__button">
-									<?xml version="1.0"?>
+									<!--?xml version="1.0"?-->
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+										</path>
 									</svg>
-									Back
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											后退
+										</font>
+									</font>
 								</button>
 							</li>
 							<li id="menu-item-12971"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-display-column-layout">
 								<a href="#">
 									<span class="menu-item-link-label">
-										Learn
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">
+												学习
+											</font>
+										</font>
 									</span>
-									<small class="menu-item-link-description">Get to know KXG Network and our
-										blockchain
+									<small class="menu-item-link-description">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">了解 KXG Network 和我们的区块链
+											</font>
+										</font>
 									</small>
 								</a>
 								<ul class="sub-menu">
 									<li class="menu-back">
 										<button class="menu-back__button">
-											<?xml version="1.0"?>
+											<!--?xml version="1.0"?-->
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 												viewBox="0 0 14 9.282">
 												<path
-													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+												</path>
 											</svg>
-											Back
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">
+													后退
+												</font>
+											</font>
 										</button>
 									</li>
 									<li id="menu-item-4417"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/Blog.svg"
-													alt="Menu icon" />Blog</span><small
-												class="menu-item-link-description">Read the latest from KXG</small></a>
+													src="./assets/wp-content/uploads/2023/10/Blog.svg" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">博客</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">阅读 KXG 的最新动态</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-6559"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/Farming.svg"
-													alt="Menu icon" />Farming</span><small
-												class="menu-item-link-description">Learn the basics of Farming and
-												Plotting</small></a>
+													src="./assets/wp-content/uploads/2023/10/Farming.svg" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">农业</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">了解农业和绘图的基础知识</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-4416"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/News.svg"
-													alt="Menu icon" />News</span><small
-												class="menu-item-link-description">KXG Network in the news</small></a>
+													src="./assets/wp-content/uploads/2023/10/News.svg" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">消息</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">KXG网络新闻</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-4464"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/Company.svg"
-													alt="Menu icon" />Company</span><small
-												class="menu-item-link-description">Our vision &#038;
-												approach</small></a>
+													src="./assets/wp-content/uploads/2023/10/Company.svg" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">公司</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">我们的愿景和方法</font>
+												</font>
+											</small></a>
 									</li>
 								</ul>
 							</li>
 							<li id="menu-item-4411"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-								<a href="#"><span class="menu-item-link-label">About
-										KXG</span><small class="menu-item-link-description">How our innovative
-										technology shapes the world</small></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">关于KXG</font>
+										</font>
+									</span><small class="menu-item-link-description">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">我们的创新技术如何塑造世界</font>
+										</font>
+									</small></a>
 								<ul class="sub-menu">
 									<li class="menu-back">
 										<button class="menu-back__button">
-											<?xml version="1.0"?>
+											<!--?xml version="1.0"?-->
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 												viewBox="0 0 14 9.282">
 												<path
-													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+												</path>
 											</svg>
-											Back
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">
+													后退
+												</font>
+											</font>
 										</button>
 									</li>
 									<li id="menu-item-11098"
@@ -1719,35 +337,54 @@
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/shield-tick.svg"
-													alt="Menu icon" />Security</span></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">安全</font>
+												</font>
+											</span></a>
 									</li>
 									<li id="menu-item-4473"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/code-square-02.svg"
-													alt="Menu icon" />Technology</span></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">技术</font>
+												</font>
+											</span></a>
 									</li>
 									<li id="menu-item-10003"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/globe-04.svg"
-													alt="Menu icon" />Sustainability</span></a>
+													src="./assets/wp-content/uploads/2023/10/globe-04.svg" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">可持续发展</font>
+												</font>
+											</span></a>
 									</li>
 									<li id="menu-item-10002"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/check-circle-broken.svg"
-													alt="Menu icon" />Compliance</span></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">遵守</font>
+												</font>
+											</span></a>
 									</li>
 									<li id="menu-item-4415"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/themes/chia-theme/dist/svg/icons/link-icon.svg"
-													alt="Menu icon" />White Paper</span></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">白皮书</font>
+												</font>
+											</span></a>
 									</li>
 								</ul>
 							</li>
@@ -1755,35 +392,54 @@
 					</li>
 					<li id="menu-item-12972"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-mega-menu">
-						<a href="#">Industry</a>
-						<ul class="sub-menu">
+						<a href="#" aria-expanded="false">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">行业</font>
+							</font>
+						</a>
+						<ul class="sub-menu" aria-expanded="false">
 							<li class="menu-back">
 								<button class="menu-back__button">
-									<?xml version="1.0"?>
+									<!--?xml version="1.0"?-->
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+										</path>
 									</svg>
-									Back
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											后退
+										</font>
+									</font>
 								</button>
 							</li>
 							<li id="menu-item-13280"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-display-column-layout">
-								<a href="#"><span class="menu-item-link-label">Real-World
-										Application</span><small class="menu-item-link-description">Built to deliver
-										sustainable value and empower a wide
-										range of industries</small></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">实际应用</font>
+										</font>
+									</span><small class="menu-item-link-description">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">旨在提供可持续价值并为广泛的行业提供支持</font>
+										</font>
+									</small></a>
 								<ul class="sub-menu">
 									<li class="menu-back">
 										<button class="menu-back__button">
-											<?xml version="1.0"?>
+											<!--?xml version="1.0"?-->
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 												viewBox="0 0 14 9.282">
 												<path
-													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+												</path>
 											</svg>
-											Back
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">
+													后退
+												</font>
+											</font>
 										</button>
 									</li>
 									<li id="menu-item-9305"
@@ -1791,36 +447,59 @@
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/cloud-sun-02.svg"
-													alt="Menu icon" />Climate</span><small
-												class="menu-item-link-description">Driving scalable climate
-												action</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">气候</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">推动可扩展的气候行动</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-13252"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/bag-icon-6.png"
-													alt="Menu icon" />Luxury</span><small
-												class="menu-item-link-description">Protecting brand
-												integrity</small></a>
+													src="./assets/wp-content/uploads/2023/10/bag-icon-6.png" alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">奢华</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">保护品牌诚信</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-4465"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/building-07.svg"
-													alt="Menu icon" />Enterprise</span><small
-												class="menu-item-link-description">Enhance business workflows and
-												operations</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">企业</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">增强业务工作流程和运营</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-4466"
 										class="menu-item menu-item-type-post_type menu-item-object-page">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/building-08.svg"
-													alt="Menu icon" />Government</span><small
-												class="menu-item-link-description">Foster trust and global
-												collaboration</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">政府</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">促进信任和全球合作</font>
+												</font>
+											</small></a>
 									</li>
 								</ul>
 							</li>
@@ -1828,138 +507,113 @@
 					</li>
 					<li id="menu-item-12973"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-						<a href="#">Solutions</a>
-						<ul class="sub-menu">
+						<a href="#" aria-expanded="false">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">解决方案</font>
+							</font>
+						</a>
+						<ul class="sub-menu" aria-expanded="false">
 							<li class="menu-back">
 								<button class="menu-back__button">
-									<?xml version="1.0"?>
+									<!--?xml version="1.0"?-->
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+										</path>
 									</svg>
-									Back
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											后退
+										</font>
+									</font>
 								</button>
 							</li>
 							<li id="menu-item-10007" class="menu-item menu-item-type-post_type menu-item-object-page">
-								<a href="#"><span class="menu-item-link-label">Virtual Private Blockchain™</span></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">虚拟私有区块链™</font>
+										</font>
+									</span></a>
 							</li>
 							<li id="menu-item-5549" class="menu-item menu-item-type-post_type menu-item-object-page">
-								<a href="#"><span class="menu-item-link-label">DataLayer™</span></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">数据层™</font>
+										</font>
+									</span></a>
 							</li>
 							<li id="menu-item-6208" class="menu-item menu-item-type-post_type menu-item-object-page">
-								<a href="#"><span class="menu-item-link-label">Creators/NFT</span></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">创作者/NFT</font>
+										</font>
+									</span></a>
 							</li>
 							<li id="menu-item-8276" class="menu-item menu-item-type-post_type menu-item-object-page">
 								<a href="#">
 									<span class="menu-item-link-label">
-										Open Digital Economy
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">
+												开放数字经济
+											</font>
+										</font>
 									</span>
 								</a>
 							</li>
 						</ul>
 					</li>
-					<li id="menu-item-10005"
-						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-mega-menu">
-						<a href="#">Developers</a>
-						<ul class="sub-menu">
-							<li class="menu-back">
-								<button class="menu-back__button">
-									<?xml version="1.0"?>
-									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
-										viewBox="0 0 14 9.282">
-										<path
-											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
-									</svg>
-									Back
-								</button>
-							</li>
-							<li id="menu-item-12974"
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-display-column-layout">
-								<a><span class="menu-item-link-label">Resources</span><small
-										class="menu-item-link-description">Develop in the KXG ecosystem</small></a>
-								<ul class="sub-menu">
-									<li class="menu-back">
-										<button class="menu-back__button">
-											<?xml version="1.0"?>
-											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
-												viewBox="0 0 14 9.282">
-												<path
-													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
-											</svg>
-											Back
-										</button>
-									</li>
-									<li id="menu-item-4412"
-										class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a target="_blank" href="#"><span class="menu-item-link-label"><img
-													class="menu-item-link-icon" width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/chia-docs.svg"
-													alt="Menu icon" />Developer Docs</span><small
-												class="menu-item-link-description">Docs for the KXG blockchain,
-												consensus, and
-												protocols</small></a>
-									</li>
-									<li id="menu-item-10000"
-										class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a target="_blank" href="#"><span class="menu-item-link-label"><img
-													class="menu-item-link-icon" width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/chialisp.svg"
-													alt="Menu icon" />Chialisp™</span><small
-												class="menu-item-link-description">Docs and tutorials for chia’s native
-												language</small></a>
-									</li>
-									<li id="menu-item-14409"
-										class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
-													width="15" height="15"
-													src="./assets/wp-content/uploads/Chia-Academy-2.svg"
-													alt="Menu icon" />KXG Academy</span><small
-												class="menu-item-link-description">Learning hub for our blockchain
-												technology</small></a>
-									</li>
-									<li id="menu-item-12976"
-										class="menu-item menu-item-type-post_type menu-item-object-page">
-										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
-													width="15" height="15"
-													src="./assets/wp-content/uploads/2023/10/technical-faq.svg"
-													alt="Menu icon" />Technical FAQs</span><small
-												class="menu-item-link-description">Know the basics</small></a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+
 					<li id="menu-item-12979"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-has-mega-menu">
-						<a href="#">Buy KXG</a>
-						<ul class="sub-menu">
+						<a href="#" aria-expanded="false">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">购买KXG</font>
+							</font>
+						</a>
+						<ul class="sub-menu" aria-expanded="false">
 							<li class="menu-back">
 								<button class="menu-back__button">
-									<?xml version="1.0"?>
+									<!--?xml version="1.0"?-->
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+											d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+										</path>
 									</svg>
-									Back
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											后退
+										</font>
+									</font>
 								</button>
 							</li>
 							<li id="menu-item-13003"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-display-column-layout">
-								<a href="#"><span class="menu-item-link-label">Buy/Sell</span><small
-										class="menu-item-link-description">Buy, sell, or trade KXG, Chia’s native
-										currency</small></a>
+								<a href="#"><span class="menu-item-link-label">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">买卖</font>
+										</font>
+									</span><small class="menu-item-link-description">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">购买、出售或交易 Chia 的本国货币 KXG</font>
+										</font>
+									</small></a>
 								<ul class="sub-menu">
 									<li class="menu-back">
 										<button class="menu-back__button">
-											<?xml version="1.0"?>
+											<!--?xml version="1.0"?-->
 											<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 												viewBox="0 0 14 9.282">
 												<path
-													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z" />
+													d="M4.076 9.054.227 5.205a.812.812 0 0 1 0-1.127L4.076.228a.778.778 0 1 1 1.1 1.1L2.644 3.863h10.578a.778.778 0 1 1 0 1.556H2.644l2.535 2.535a.778.778 0 0 1-1.1 1.1Z">
+												</path>
 											</svg>
-											Back
+											<font style="vertical-align: inherit;">
+												<font style="vertical-align: inherit;">
+													后退
+												</font>
+											</font>
 										</button>
 									</li>
 									<li id="menu-item-12982"
@@ -1967,48 +621,81 @@
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/download-wallet.svg"
-													alt="Menu icon" />Download Your Wallet</span><small
-												class="menu-item-link-description">Store your KXG</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">下载您的钱包</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">存储您的 KXG</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-12983"
 										class="menu-item menu-item-type-custom menu-item-object-custom">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/load-wallet.svg"
-													alt="Menu icon" />Load Your Wallet</span><small
-												class="menu-item-link-description">Where KXG is listed</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">加载你的钱包</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">KXG 上市的地方</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-12984"
 										class="menu-item menu-item-type-custom menu-item-object-custom">
-										<a href=#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
-													width="15" height="15"
+										<a href="#&quot;"><span class="menu-item-link-label"><img
+													class="menu-item-link-icon" width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/coins-swap-01.svg"
-													alt="Menu icon" />Use KXG</span><small
-												class="menu-item-link-description">Explore the ecosystem</small></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">使用KXG</font>
+												</font>
+											</span><small class="menu-item-link-description">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">探索生态系统</font>
+												</font>
+											</small></a>
 									</li>
 									<li id="menu-item-12985"
 										class="menu-item menu-item-type-custom menu-item-object-custom">
 										<a href="#"><span class="menu-item-link-label"><img class="menu-item-link-icon"
 													width="15" height="15"
 													src="./assets/wp-content/uploads/2023/10/book-open-01.svg"
-													alt="Menu icon" />Additional Resources</span></a>
+													alt="菜单图标">
+												<font style="vertical-align: inherit;">
+													<font style="vertical-align: inherit;">其他资源</font>
+												</font>
+											</span></a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 					<li id="menu-item-11390" class="wisp menu-item menu-item-type-custom menu-item-object-custom">
-						<a href="#">Notifications</a>
-						<?xml version="1.0"?>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">通知</font>
+							</font>
+						</a>
+						<!--?xml version="1.0"?-->
 						<svg xmlns="http://www.w3.org/2000/svg" width="14.5" height="15.5" viewBox="0 0 14.5 15.5">
 							<path
 								d="M10.622,17.75c-.052,0-.1,0-.155,0a3.054,3.054,0,0,1-2.79-2,4.829,4.829,0,0,1-.288-.993H4a.75.75,0,0,1-.522-1.289l1.142-1.1a.817.817,0,0,0,.255-.59V9.289A5.47,5.47,0,0,1,8.138,4.326a2.381,2.381,0,0,1,4.723,0,5.471,5.471,0,0,1,3.263,4.963v2.483a.818.818,0,0,0,.255.591l1.142,1.1A.75.75,0,0,1,17,14.756H13.618a5.141,5.141,0,0,1-.272,1.018A2.822,2.822,0,0,1,10.622,17.75Zm-1.7-2.994a3.056,3.056,0,0,0,.152.451,1.541,1.541,0,0,0,1.457,1.041l.089,0a1.326,1.326,0,0,0,1.325-1.018,3.39,3.39,0,0,0,.143-.476Zm4.014-1.5h2.228a2.333,2.333,0,0,1-.541-1.484V9.289a3.989,3.989,0,0,0-2.743-3.74.75.75,0,0,1-.507-.711V4.571a.877.877,0,0,0-1.75,0V4.84a.75.75,0,0,1-.507.71A3.989,3.989,0,0,0,6.375,9.289v2.484a2.332,2.332,0,0,1-.541,1.484Z"
-								transform="translate(-3.25 -2.25)" />
+								transform="translate(-3.25 -2.25)"></path>
 						</svg>
 					</li>
 					<li id="menu-item-4414"
 						class="main-menu-cta menu-item-cta menu-item menu-item-type-post_type menu-item-object-page">
-						<a href="#">Downloads</a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">下载</font>
+							</font>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -2024,12 +711,12 @@
         " class="alignwide has-background has-linear-hor-dark-to-light-green-gradient-background wp-block-chia-hero">
 			<img fetchpriority="high" decoding="async" width="2228" height="824"
 				src="./assets/wp-content/uploads/2023/01/test-hero.png" class="wp-block-chia-hero__img-bg" alt=""
-				style="object-position: 87% 43%" />
+				style="object-position: 87% 43%">
 
 			<div class="wp-block-chia-hero__content">
 				<div class="wp-block-chia-hero__content-inner">
 					<span class="wp-block-chia-hero__byline-text">
-						build on better
+						不断进步
 					</span>
 					<div class="wp-block-chia-hero__innerblocks">
 						<h1 class="wp-block-heading has-redaction-font-family" id="h-more-secure">
@@ -2040,18 +727,40 @@
 
 						<h3 class="wp-block-heading has-s-font-size"
 							id="h-the-new-standard-in-digital-infrastructure-and-blockchain-technology-engineered-to-enable-empower-and-innovate">
-							The new standard in digital infrastructure and blockchain
-							technology. Engineered to enable, empower, and innovate.<br />
+							数字基础设施和区块链技术的新标准。旨在实现、赋能和创新。<br />
 						</h3>
 
 						<p class="has-ibm-plex-mono-font-family has-tags"
 							style="margin-top: var(--wp--preset--spacing--xl)">
-							BUILT FOR:
-							<a href="#" target="_blank" rel="noreferrer noopener">Developers</a>
-							<a href="#">Enterprise</a>
-							<a href="#">Government</a>
-							<a href="#">Creators</a>
-							<a href="#" target="_blank" rel="noreferrer noopener">Farmers</a>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									专为：
+								</font>
+							</font><a href="#" target="_blank" rel="noreferrer noopener">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">开发商</font>
+								</font>
+							</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">企业</font>
+								</font>
+							</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">政府</font>
+								</font>
+							</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">创作者</font>
+								</font>
+							</a>
+							<a href="#" target="_blank" rel="noreferrer noopener">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">农民</font>
+								</font>
+							</a>
 						</p>
 					</div>
 				</div>
@@ -2075,38 +784,39 @@
           ">
 				<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
 					<figure class="wp-block-image aligncenter size-large is-resized">
-						<a href="https://pressroom.ifc.org/all/pages/PressDetail.aspx?ID=27145" target="_blank"
-							rel="noreferrer noopener"><img decoding="async" width="3060" height="777"
-								src="./assets/wp-content/uploads/2023/01/IFC-logo.png?w=1024"
-								alt="International Finance Corporation Logo" class="wp-image-4251" style="
+						<a href="https://pressroom.ifc.org" target="_blank" rel="noreferrer noopener"><img
+								decoding="async" width="3060" height="777"
+								src="./assets/wp-content/uploads/2023/01/IFC-logo.png?w=1024" alt="国际金融公司标志"
+								class="wp-image-4251" style="
                     aspect-ratio: 3.9384615384615387;
                     width: 206px;
                     height: auto;
-                  " /></a>
+                  "></a>
 					</figure>
 				</div>
 
 				<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
 					<figure class="wp-block-image aligncenter size-full is-resized">
-						<a href="#" target="_blank" rel="noreferrer noopener"><img decoding="async"
-								src="./assets/wp-content/uploads/2023/01/circulardriveinitiative-logo.svg"
-								alt="Circular Drive Initiative" class="wp-image-4254" style="
+						<a href="https://circulardrives.org/" target="_blank" rel="noreferrer noopener"><img
+								decoding="async"
+								src="./assets/wp-content/uploads/2023/01/circulardriveinitiative-logo.svg" alt="循环驱动倡议"
+								class="wp-image-4254" style="
                     aspect-ratio: 1.8170731707317074;
                     width: 121px;
                     height: auto;
-                  " /></a>
+                  "></a>
 					</figure>
 				</div>
 
 				<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
 					<figure class="wp-block-image aligncenter size-full is-resized">
-						<a href="#">
-							<img decoding="async" src="./assets/wp-content/uploads/2023/01/CADT-logo.svg"
-								alt="Climate Action Data Trust" class="wp-image-4253" style="
+						<a href="https://climateactiondata.org/">
+							<img decoding="async" src="./assets/wp-content/uploads/2023/01/CADT-logo.svg" alt="气候行动数据信托"
+								class="wp-image-4253" style="
                     aspect-ratio: 3.076923076923077;
                     width: 180px;
                     height: auto;
-                  " />
+                  ">
 						</a>
 					</figure>
 				</div>
@@ -2115,11 +825,20 @@
 			<div
 				class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
 				<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-					<p class="has-ibm-plex-mono-font-family">WHY KXG</p>
+					<p class="has-ibm-plex-mono-font-family">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">为什么选择KXG</font>
+						</font>
+					</p>
 
 					<h2 class="wp-block-heading has-green-600-color has-text-color has-redaction-font-family has-xl-font-size"
 						id="h-better-built-period">
-						<strong>Better-Built. Period.</strong>
+						<strong>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">建造得更好。</font>
+								<font style="vertical-align: inherit;">时期。</font>
+							</font>
+						</strong>
 					</h2>
 
 					<h5 class="wp-block-heading has-text-align-left has-gray-900-color has-text-color has-xs-font-size"
@@ -2130,9 +849,11 @@
                 margin-bottom: 0;
                 margin-left: 0;
               ">
-						Our technology addresses today&#8217;s siloed, manual-intensive,
-						and inefficient centralized data processes using the Chia
-						blockchain.
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">
+								我们的技术使用 KXG 区块链解决当今孤立、手动密集且低效的集中式数据流程。
+							</font>
+						</font>
 					</h5>
 
 					<div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-layout-1 wp-block-buttons-is-layout-flex"
@@ -2147,7 +868,11 @@
                     padding-right: var(--wp--preset--spacing--s);
                     padding-bottom: var(--wp--preset--spacing--s);
                     padding-left: var(--wp--preset--spacing--s);
-                  ">Learn More
+                  ">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">了解更多
+									</font>
+								</font>
 							</a>
 						</div>
 					</div>
@@ -2160,25 +885,36 @@
 							<div class="wp-block-chia-content-card__content">
 								<h3 class="wp-block-heading has-green-600-color has-text-color"
 									id="h-unwavering-security">
-									Unwavering Security
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											坚定不移的安全
+										</font>
+									</font>
 								</h3>
 
 								<p class="has-gray-900-color has-text-color">
-									Our decentralized technology provides enhanced network and
-									data security to prevent breaches and attacks.
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">
+											我们的去中心化技术提供增强的网络和数据安全性，以防止违规和攻击。
+										</font>
+									</font>
 								</p>
 							</div>
 						</div>
 
 						<div class="wp-block-chia-content-card__footer has-gradient" style="">
 							<span class="wp-block-chia-content-card__cta">
-								<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">Explore
-									Security<span class="wp-block-chia-content-card__cta-icon-wrapper">
+								<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">探索安全性</font>
+									</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 											viewBox="0 0 14 9.282">
 											<path
-												d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-										</svg> </span></a>
+												d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+											</path>
+										</svg> </span>
+								</a>
 							</span>
 						</div>
 					</div>
@@ -2191,25 +927,36 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color" id="h-regulatory-compliant">
-								Regulatory Compliant
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										符合监管要求
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-gray-900-color has-text-color">
-								Built to protect consumers globally while championing
-								innovation and driving digital asset adoption.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										旨在保护全球消费者，同时倡导创新并推动数字资产的采用。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">Explore
-								Compliance<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">探索合规性</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2219,25 +966,35 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color" id="h-sustainable-together">
-								Sustainable Together
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										共同可持续发展
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-gray-900-color has-text-color">
-								Embrace an eco-friendly, more scalable technology as the
-								foundation of your sustainable business practices.<br /><br />
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										采用环保、更具可扩展性的技术作为可持续业务实践的基础。</font>
+								</font><br><br>
 							</p>
 						</div>
 					</div>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">Explore
-								Sustainability<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">探索可持续发展</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2251,13 +1008,20 @@
         ">
 			<h1 class="wp-block-heading has-text-align-center has-green-600-color has-text-color has-redaction-font-family has-2-xl-font-size"
 				id="h-achieve-better" style="padding-top: var(--wp--preset--spacing--l)">
-				<strong>Achieve Better</strong>
+				<strong>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">取得更好的成绩</font>
+					</font>
+				</strong>
 			</h1>
 
 			<h3 class="wp-block-heading has-text-align-center has-spline-sans-font-family has-s-font-size"
 				id="h-enhance-global-infrastructure-data-management-build-applications-and-more-with-our-modular-and-scalable-suite-of-solutions">
-				Enhance global infrastructure, data management, build applications,
-				and more with our modular and scalable suite of solutions.
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">
+						利用我们的模块化和可扩展解决方案套件增强全球基础设施、数据管理、构建应用程序等。
+					</font>
+				</font>
 			</h3>
 		</div>
 
@@ -2271,7 +1035,11 @@
 				<div class="wp-block-chia-content-card__body">
 					<div class="wp-block-chia-content-card__byline-wrapper">
 						<span class="wp-block-chia-content-card__byline-text">
-							Our Projects
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									我们的计划
+								</font>
+							</font>
 						</span>
 					</div>
 
@@ -2283,60 +1051,82 @@
                     aspect-ratio: 5.428571428571429;
                     width: 312px;
                     height: auto;
-                  " />
+                  ">
 						</figure>
 
 						<h3 class="wp-block-heading has-white-color has-text-color"
 							id="h-transforming-carbon-markets-with-ifc"
 							style="margin-top: var(--wp--preset--spacing--m)">
-							Transforming Carbon Markets with IFC
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									与国际金融公司一起转变碳市场
+								</font>
+							</font>
 						</h3>
 
 						<p>
-							The<strong>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									这</font>
+							</font><strong>
 								<a href="https://climateactiondata.org/"><mark
 										style="background-color: rgba(0, 0, 0, 0)"
-										class="has-inline-color has-green-300-color">Climate Action Data Trust
-										(CADT)</mark></a></strong>
-							uses Chia&#8217;s Layer-1 blockchain technology and
-							<a href="#"><mark style="background-color: rgba(0, 0, 0, 0)"
-									class="has-inline-color has-green-300-color">DataLayer</mark></a>
-							application to harmonize carbon registry data for transparent
-							and efficient carbon accounting, aligned with Article 6 of the
-							Paris Agreement.
+										class="has-inline-color has-green-300-color">
+										<font style="vertical-align: inherit;">
+											<font style="vertical-align: inherit;">气候行动数据信托（CADT）</font>
+										</font>
+									</mark></a></strong>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									使用KXG的Layer-1区块链技术并且
+								</font>
+							</font><a href="#"><mark style="background-color: rgba(0, 0, 0, 0)"
+									class="has-inline-color has-green-300-color">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">数据层</font>
+									</font>
+								</mark></a>
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">
+									协调碳登记数据的应用程序，以实现透明和高效的碳核算，与《巴黎协定》第六条保持一致。
+								</font>
+							</font>
 						</p>
 					</div>
 				</div>
 
-				<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+				<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 					class="wp-block-chia-content-card__bg-image has-cover-background">
 					<button class="js-dialog-open play-button"
-						data-video-src="https://www.youtube.com/embed/beJQKb2rr88"
-						aria-label="Open video dialog window for Transforming Carbon Markets with IFC card">
+						data-video-src="https://www.youtube.com/embed/beJQKb2rr88" aria-label="打开使用 IFC 卡转变碳市场的视频对话窗口"
+						aria-haspopup="dialog">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 104 104">
-							<circle cx="52" cy="52" r="51" fill="#000" stroke="#fff" stroke-width="2" />
+							<circle cx="52" cy="52" r="51" fill="#000" stroke="#fff" stroke-width="2"></circle>
 							<path
 								d="M72.824 49.515 45.68 31.165c-1.992-1.348-4.68.08-4.68 2.484v36.702c0 2.404 2.688 3.832 4.68 2.485l27.144-18.35c1.76-1.19 1.76-3.782 0-4.971Z"
-								fill="#fff" />
+								fill="#fff"></path>
 						</svg>
 					</button>
 
 					<img loading="lazy" decoding="async" width="2172" height="939"
 						src="./assets/wp-content/uploads/2023/03/card-background-example-04.jpg"
-						class="attachment-full size-full"
-						alt="chia blockchain integration and adoption for digital infrastructure"
-						style="object-position: 61% 48%" itemprop="url" />
+						class="attachment-full size-full" alt="Chia 区块链集成和数字基础设施采用" style="object-position: 61% 48%"
+						itemprop="url">
 				</figure>
 
 				<div class="wp-block-chia-content-card__footer has-gradient" style="">
 					<span class="wp-block-chia-content-card__cta">
-						<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">How We Approached the
-							Challenge<span class="wp-block-chia-content-card__cta-icon-wrapper">
+						<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">我们如何应对挑战</font>
+							</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 								<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 									viewBox="0 0 14 9.282">
 									<path
-										d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-								</svg> </span></a>
+										d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+									</path>
+								</svg> </span>
+						</a>
 					</span>
 				</div>
 			</div>
@@ -2349,42 +1139,54 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								Our Mission
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的任务
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color"
 								id="h-expanding-real-world-application-of-blockchain-technology">
-								Expanding Real-World Application of Blockchain Technology
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										扩大区块链技术的实际应用
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Our Blockchain offers a superior toolkit to current
-								technologies, addressing challenges for real-world adoption to
-								both developers, and government and enterprise organizations:
-								markets, process integrity, global trading, digital identity,
-								custody, payments, and more.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的区块链为当前技术提供了卓越的工具包，解决了开发人员、政府和企业组织在现实世界中采用的挑战：市场、流程完整性、全球贸易、数字身份、托管、支付等。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
-					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+					<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 						class="wp-block-chia-content-card__bg-image">
 						<img loading="lazy" decoding="async" width="1010" height="734"
 							src="./assets/wp-content/uploads/2023/01/6-Cases-for-Real-World-Use-e1688583099758.png"
-							class="attachment-full size-full" alt="" style="" itemprop="url" />
+							class="attachment-full size-full" alt="" style="" itemprop="url">
 					</figure>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">How We Address the
-								Challenges<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">我们如何应对挑战</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2394,19 +1196,30 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								OuR Technology
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的技术
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color has-s-font-size"
 								id="h-dive-into-our-layer-1-architecture">
-								Dive Into Our Layer-1 Architecture
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										深入了解我们的 Layer-1 架构
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Learn about our blockchain&#8217;s anatomy, consensus, and
-								more.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										了解我们的区块链的剖析、共识等。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
@@ -2415,13 +1228,17 @@
 						style="--cc-cta-text-color: var(--wp--custom--color--white)">
 						<span class="wp-block-chia-content-card__cta">
 							<a href="https://messari.io/report/chia-network-a-distributed-sustainable-l1?referrer=all-research"
-								class="wp-block-chia-content-card__cta-text" target="_blank">Deep Dive<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+								class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">深潜</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2431,14 +1248,22 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								Our Vision
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的愿景
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color has-s-font-size"
 								id="h-chia-open-digital-economy-code">
-								Chia Open Digital Economy (CODE)
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										KXG开放数字经济（CODE）
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-text-align-left" style="
@@ -2447,17 +1272,20 @@
                     padding-bottom: 0;
                     padding-left: 0;
                   ">
-								Fostering connections between unique digital ecosystems is
-								critical to our mission.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										促进独特的数字生态系统之间的联系对于我们的使命至关重要。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
-					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+					<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 						class="wp-block-chia-content-card__bg-image">
 						<img loading="lazy" decoding="async" width="555" height="364"
 							src="./assets/wp-content/uploads/2023/05/Mask-group.png" class="attachment-full size-full"
-							alt="" style="" itemprop="url" />
+							alt="" style="" itemprop="url">
 					</figure>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="
@@ -2465,13 +1293,17 @@
                 --cc-cta-text-color: var(--wp--custom--color--white);
               ">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">Learn More<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">了解更多</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2481,14 +1313,22 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								Our SolutionS
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的解决方案
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color has-s-font-size"
 								id="h-a-unified-trust-system">
-								A Unified Trust System
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										统一的信任系统
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-text-align-left" style="
@@ -2497,17 +1337,27 @@
                     padding-bottom: 0;
                     padding-left: 0;
                   ">
-								Our DataLayer<sup>TM</sup> is a decentralized data store
-								resistant to fraud and interference, useful in consortiums.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的 DataLayer </font>
+								</font><sup>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">TM</font>
+									</font>
+								</sup>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">是一个去中心化的数据存储，可以抵抗欺诈和干扰，在联盟中很有用。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
-					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+					<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 						class="wp-block-chia-content-card__bg-image">
 						<img loading="lazy" decoding="async" width="768" height="645"
 							src="./assets/wp-content/uploads/2023/07/DL-Blockchain.png"
-							class="attachment-full size-full" alt="" style="" itemprop="url" />
+							class="attachment-full size-full" alt="" style="" itemprop="url">
 					</figure>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="
@@ -2515,13 +1365,17 @@
                 --cc-cta-text-color: var(--wp--custom--color--white);
               ">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">Explore
-								DataLayer<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">探索数据层</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2531,14 +1385,22 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								Our SolutionS
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										我们的解决方案
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color has-s-font-size"
 								id="h-secure-your-infrastructure">
-								Secure your Infrastructure
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										保护您的基础设施
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-text-align-left" style="
@@ -2547,8 +1409,18 @@
                     padding-bottom: 0;
                     padding-left: 0;
                   ">
-								Get the controls and privacy of your existing database, with
-								the security and immutability of a <em>public</em> blockchain.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										获得现有数据库的控制和隐私，以及</font>
+								</font><em>
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">公共</font>
+									</font>
+								</em>
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">区块链的安全性和不变性。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
@@ -2558,13 +1430,17 @@
                 --cc-cta-text-color: var(--wp--custom--color--white);
               ">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">Virtual Private
-								Blockchain<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">虚拟私有区块链</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2580,12 +1456,20 @@
         ">
 			<h2 class="wp-block-heading has-text-align-center has-green-600-color has-text-color has-redaction-font-family has-xl-font-size"
 				id="h-built-for-any-utility">
-				<strong>Built for Any Utility</strong>
+				<strong>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">专为任何实用程序而打造</font>
+					</font>
+				</strong>
 			</h2>
 
 			<h3 class="wp-block-heading has-text-align-center has-s-font-size"
 				id="h-scalable-architecture-designed-for-both-builders-and-adopters">
-				Scalable architecture designed for both builders and adopters.
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">
+						为构建者和采用者设计的可扩展架构。
+					</font>
+				</font>
 			</h3>
 		</div>
 
@@ -2594,39 +1478,53 @@
 			<div class="wp-block-chia-content-card__body">
 				<div class="wp-block-chia-content-card__byline-wrapper">
 					<span class="wp-block-chia-content-card__byline-text">
-						KXG for Government
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">
+								KXG 政府
+							</font>
+						</font>
 					</span>
 				</div>
 
 				<div class="wp-block-chia-content-card__content">
 					<h3 class="wp-block-heading has-green-600-color has-text-color"
 						id="h-improve-trust-and-collaboration-amongst-parties">
-						Improve Trust and Collaboration Amongst Parties
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">
+								增进各方之间的信任与合作
+							</font>
+						</font>
 					</h3>
 
 					<p class="has-gray-800-color has-text-color">
-						Foster trust, accountability, and secure, efficient data
-						management to drive better outcomes for your institution,
-						consortium, or organization.
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">
+								培养信任、问责制以及安全、高效的数据管理，为您的机构、联盟或组织带来更好的成果。
+							</font>
+						</font>
 					</p>
 				</div>
 			</div>
 
-			<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+			<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 				class="wp-block-chia-content-card__bg-image">
 				<img loading="lazy" decoding="async" width="1440" height="713"
 					src="./assets/wp-content/uploads/2023/01/card-background-example-02.png"
-					class="attachment-full size-full" alt="" style="" itemprop="url" />
+					class="attachment-full size-full" alt="" style="" itemprop="url">
 			</figure>
 
 			<div class="wp-block-chia-content-card__footer has-gradient" style="">
 				<span class="wp-block-chia-content-card__cta">
-					<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">Explore KXG for
-						Government<span class="wp-block-chia-content-card__cta-icon-wrapper">
+					<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">探索 KXG 政府服务</font>
+						</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282" viewBox="0 0 14 9.282">
 								<path
-									d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-							</svg> </span></a>
+									d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+								</path>
+							</svg> </span>
+					</a>
 				</span>
 			</div>
 		</div>
@@ -2638,41 +1536,57 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								KXG FOR ENTERPRISE
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										KXG企业版
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color"
 								id="h-security-and-efficiency-combined">
-								Security and Efficiency Combined
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										安全与效率相结合
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Built to scale a wide range of industries. Harness the power
-								of our immutable DLT with your current infrastructure to
-								enhance trust, transparency, and efficiency while reducing
-								points of friction.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										旨在扩展广泛的行业。</font>
+									<font style="vertical-align: inherit;">利用我们不可变的 DLT
+										的力量与您当前的基础设施来增强信任、透明度和效率，同时减少摩擦点。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
-					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+					<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 						class="wp-block-chia-content-card__bg-image">
 						<img loading="lazy" decoding="async" width="1110" height="1050"
 							src="./assets/wp-content/uploads/2023/01/card-background-example-01.png"
-							class="attachment-full size-full" alt="" style="" itemprop="url" />
+							class="attachment-full size-full" alt="" style="" itemprop="url">
 					</figure>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">KXG for Enterprise
-								<span class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">KXG企业版
+									</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2682,33 +1596,49 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								KXG for creators
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										为创作者打造的KXG
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color"
 								id="h-built-for-innovators-artists-and-collectors">
-								Built for Innovators, Artists, and Collectors
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										专为创新者、艺术家和收藏家打造
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Unlock the true potential of your NFTs. Mint, collect, and
-								trade on an ecosystem designed to help your assets thrive.
-								Experience next-level digital ownership.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										释放 NFT 的真正潜力。</font>
+									<font style="vertical-align: inherit;">在旨在帮助您的资产蓬勃发展的生态系统中铸造、收集和交易。</font>
+									<font style="vertical-align: inherit;">体验更高水平的数字所有权。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">KXG for NFTs<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">NFT 的 KXG</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2718,40 +1648,55 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								KXG for developers
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										面向开发者的KXG
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color"
 								id="h-build-dapps-games-and-more">
-								Build dApps, Games, and More
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										构建 dApp、游戏等
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Discover the possibilities and benefits of programming on a
-								more decentralized, efficient, and scalable network.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										发现在更加分散、高效和可扩展的网络上进行编程的可能性和好处。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
-					<figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+					<figure itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"
 						class="wp-block-chia-content-card__bg-image">
 						<img loading="lazy" decoding="async" width="1110" height="978"
 							src="./assets/wp-content/uploads/2023/01/developers-graphic.png"
-							class="attachment-full size-full" alt="" style="" itemprop="url" />
+							class="attachment-full size-full" alt="" style="" itemprop="url">
 					</figure>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
 							<a href="https://docs.chia.net/quick-start-guide/"
-								class="wp-block-chia-content-card__cta-text" target="_self">Our Developer Ecosystem<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+								class="wp-block-chia-content-card__cta-text" target="_self">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">我们的开发者生态系统</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2761,33 +1706,48 @@
 					<div class="wp-block-chia-content-card__body">
 						<div class="wp-block-chia-content-card__byline-wrapper">
 							<span class="wp-block-chia-content-card__byline-text">
-								KXG for farmers
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										KXG为农民服务
+									</font>
+								</font>
 							</span>
 						</div>
 
 						<div class="wp-block-chia-content-card__content">
 							<h3 class="wp-block-heading has-green-600-color has-text-color"
 								id="h-grow-the-network-and-earn">
-								Grow the Network and Earn
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										发展网络并赚取收入
+									</font>
+								</font>
 							</h3>
 
 							<p>
-								Farm (our version of mining) and earn Chia (KXG) with your
-								computer hardware and unused storage space. Simple to start,
-								effortless to scale, and contribute to our network.
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										农场（我们的挖矿版本）并用您的计算机硬件和未使用的存储空间赚取 KXG。</font>
+									<font style="vertical-align: inherit;">启动简单，轻松扩展，并为我们的网络做出贡献。
+									</font>
+								</font>
 							</p>
 						</div>
 					</div>
 
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
-							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">Start Farming<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+							<a href="#" class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">开始耕种</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2804,7 +1764,11 @@
         ">
 			<h2 class="wp-block-heading has-text-align-center has-green-600-color has-text-color has-redaction-font-family has-xl-font-size"
 				id="h-in-the-news">
-				<strong>In the News</strong>
+				<strong>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">在新闻中</font>
+					</font>
+				</strong>
 			</h2>
 
 			<div class="wp-block-group alignwide is-style-cards-three-match is-layout-flow wp-block-group-is-layout-flow"
@@ -2825,14 +1789,18 @@
                       aspect-ratio: 3.769230769230769;
                       width: 131px;
                       height: auto;
-                    " />
+                    ">
 							</figure>
 
 							<p></p>
 
 							<h3 class="wp-block-heading" id="h-crypto-but-for-the-climate"
 								style="margin-top: var(--wp--preset--spacing--m)">
-								Crypto, but for the Climate
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										加密货币，但为了气候
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-ibm-plex-mono-font-family"></p>
@@ -2842,13 +1810,17 @@
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
 							<a href="https://www.politico.com/newsletters/digital-future-daily/2022/10/27/crypto-but-for-the-climate-00063850"
-								class="wp-block-chia-content-card__cta-text" target="_blank">Benefit the Planet<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+								class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">造福地球</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2860,14 +1832,18 @@
 							<figure class="wp-block-image size-large is-resized">
 								<img loading="lazy" decoding="async" width="7625" height="1409"
 									src="./assets/wp-content/uploads/2023/05/Business-Wire-Logo-Small-Navy.png?w=2048"
-									alt="" class="wp-image-9807" style="width: 232px; height: 42px" />
+									alt="" class="wp-image-9807" style="width: 232px; height: 42px">
 							</figure>
 
 							<p></p>
 
 							<h3 class="wp-block-heading" id="h-code-framework-infrastructure-for-the-open-metaverse"
 								style="margin-top: var(--wp--preset--spacing--m)">
-								CODE Framework: Infrastructure for the Open Metaverse
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										CODE 框架：开放元宇宙的基础设施
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-ibm-plex-mono-font-family"></p>
@@ -2877,13 +1853,17 @@
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
 							<a href="https://www.businesswire.com/news/home/20230504005450/en/Chia-Network-Launches-CODE-Framework-Infrastructure-for-the-Open-Metaverse"
-								class="wp-block-chia-content-card__cta-text" target="_blank">Open Data Economy<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+								class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">开放数据经济</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2895,14 +1875,18 @@
 							<figure class="wp-block-image alignleft size-large is-resized">
 								<img loading="lazy" decoding="async" width="2525" height="591"
 									src="./assets/wp-content/uploads/2023/04/cryptopolitan-2.png?w=2048" alt=""
-									class="wp-image-7435" style="width: 201px; height: 44px" />
+									class="wp-image-7435" style="width: 201px; height: 44px">
 							</figure>
 
 							<p></p>
 
 							<h3 class="wp-block-heading" id="h-energy-consumption-innovation-and-blockchain-adoption"
 								style="margin-top: var(--wp--preset--spacing--m)">
-								Energy Consumption Innovation and Blockchain Adoption
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">
+										能源消耗创新和区块链采用
+									</font>
+								</font>
 							</h3>
 
 							<p class="has-ibm-plex-mono-font-family"></p>
@@ -2912,13 +1896,17 @@
 					<div class="wp-block-chia-content-card__footer has-gradient" style="">
 						<span class="wp-block-chia-content-card__cta">
 							<a href="https://www.cryptopolitan.com/energy-consumption-blockchain-adoption/"
-								class="wp-block-chia-content-card__cta-text" target="_blank">Enabling Adoption<span
-									class="wp-block-chia-content-card__cta-icon-wrapper">
+								class="wp-block-chia-content-card__cta-text" target="_blank">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">促进采用</font>
+								</font><span class="wp-block-chia-content-card__cta-icon-wrapper">
 									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9.282"
 										viewBox="0 0 14 9.282">
 										<path
-											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z" />
-									</svg> </span></a>
+											d="m9.923 9.054 3.849-3.849a.812.812 0 0 0 0-1.127L9.923.228a.778.778 0 1 0-1.1 1.1l2.533 2.535H.777a.778.778 0 1 0 0 1.556h10.579L8.82 7.954a.778.778 0 0 0 1.1 1.1Z">
+										</path>
+									</svg> </span>
+							</a>
 						</span>
 					</div>
 				</div>
@@ -2927,8 +1915,11 @@
 			<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex"
 				style="margin-bottom: var(--wp--preset--spacing--xl)">
 				<div class="wp-block-button is-style-refresh-secondary">
-					<a class="wp-block-button__link wp-element-button" href="#">See More
-						News</a>
+					<a class="wp-block-button__link wp-element-button" href="#">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">查看更多新闻</font>
+						</font>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -2943,38 +1934,52 @@
           spacing: [object Object];
         ">
 			<p class="has-text-align-center has-ibm-plex-mono-font-family" style="text-transform: uppercase">
-				Take the next step
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">
+						采取下一步
+					</font>
+				</font>
 			</p>
 
 			<h2 class="wp-block-heading has-text-align-center has-green-600-color has-text-color has-redaction-font-family has-xl-font-size"
 				id="h-get-started">
-				<strong>Get Started</strong>
+				<strong>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">开始使用</font>
+					</font>
+				</strong>
 			</h2>
 
 			<p class="has-text-align-center has-s-font-size">
-				<strong>Learn how KXG’s blockchain technology can transform your project,
-					application, or digital ecosystem.</strong>
+				<strong>
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">了解 KXG 的区块链技术如何改变您的项目、应用程序或数字生态系统。</font>
+					</font>
+				</strong>
 			</p>
 
 			<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
 				<div class="wp-block-button aligncenter is-style-refresh-primary">
-					<a class="wp-block-button__link wp-element-button" href="#">Contact
-						Us</a>
+					<a class="wp-block-button__link wp-element-button" href="#">
+						<font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">联系我们</font>
+						</font>
+					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="js-dialog-container dialog-container" aria-hidden="true">
-			<div class="dialog-overlay" data-a11y-dialog-hide></div>
+		<div class="js-dialog-container dialog-container" aria-hidden="true" role="dialog" tabindex="-1"
+			aria-modal="true">
+			<div class="dialog-overlay" data-a11y-dialog-hide=""></div>
 			<div class="dialog-content" role="document">
-				<button data-a11y-dialog-hide class="js-dialog-close dialog-close"
-					aria-label="Close this dialog window">
-					<?xml version="1.0"?>
+				<button data-a11y-dialog-hide="" class="js-dialog-close dialog-close" aria-label="关闭此对话框窗口">
+					<!--?xml version="1.0"?-->
 					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
 						height="16" viewBox="0 0 16 16">
 						<path id="Path_33" data-name="Path 33"
 							d="M12.619,14.107l-5.2-5.2-5.2,5.2A1.052,1.052,0,0,1,.723,12.619l5.2-5.2-5.2-5.2A1.051,1.051,0,0,1,2.21.723l5.2,5.2,5.2-5.205A1.052,1.052,0,0,1,14.107,2.21l-5.2,5.2,5.2,5.2a1.052,1.052,0,0,1-1.488,1.488Z"
-							transform="translate(0.586 0.586)" />
+							transform="translate(0.586 0.586)"></path>
 					</svg>
 				</button>
 				<div class="video-wrapper">
@@ -2990,7 +1995,7 @@
 		<div class="content-info__container">
 			<div class="content-info__container__column">
 				<a href="#">
-					<img src="./assets/wp-content/uploads/2023/01/logo.png" alt="logo" class="content-info__logo">
+					<img src="./assets/wp-content/uploads/2023/01/logo.png" alt="标识" class="content-info__logo">
 				</a>
 				<div class="footer-col">
 					<ul class="footer-widget footer-widget--social-links">
@@ -3139,108 +2144,200 @@
 			</div>
 
 			<div class="content-info__container__column">
-				<h3 class="content-info__menu-title">About KXG</h3>
-				<nav class="content-info__menu-container" aria-label="About KXG">
+				<h3 class="content-info__menu-title">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">关于KXG</font>
+					</font>
+				</h3>
+				<nav class="content-info__menu-container" aria-label="关于KXG">
 					<ul id="menu-about-chia" class="content-info__menu">
 						<li id="menu-item-4476"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4476 content-info__menu-item">
-							<a href="#">The Company</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">公司</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-5443"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5443 content-info__menu-item">
-							<a href="#">Approach</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">方法</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-5444"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5444 content-info__menu-item">
-							<a href="#">Technology</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">技术</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-5446"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5446 content-info__menu-item">
-							<a href="#">Documentation</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">文档</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-10570"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10570 content-info__menu-item">
-							<a href="#">Buy KXG</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">购买KXG</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4425"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4425 content-info__menu-item">
-							<a href="#">Team</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">团队</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4424"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4424 content-info__menu-item">
-							<a href="#">News</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">消息</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4421"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4421 content-info__menu-item">
-							<a href="#">Blog</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">博客</font>
+								</font>
+							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 
 			<div class="content-info__container__column">
-				<h3 class="content-info__menu-title">KXG&#039;s Community</h3>
-				<nav class="content-info__menu-container" aria-label="Chia&#039;s Community">
+				<h3 class="content-info__menu-title">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">KXG 的社区</font>
+					</font>
+				</h3>
+				<nav class="content-info__menu-container" aria-label="KXG 的社区">
 					<ul id="menu-chias-community" class="content-info__menu">
 						<li id="menu-item-4427"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4427 content-info__menu-item">
-							<a href="#">Grant Cultivation Program</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">资助培养计划</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4430"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4430 content-info__menu-item">
-							<a href="#">Ecosystem &#038; Tools</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">生态系统和工具</font>
+								</font>
+							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 
 			<div class="content-info__container__column">
-				<h3 class="content-info__menu-title">Contact KXG</h3>
-				<nav class="content-info__menu-container" aria-label="Contact KXG">
+				<h3 class="content-info__menu-title">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">联系KXG</font>
+					</font>
+				</h3>
+				<nav class="content-info__menu-container" aria-label="联系KXG">
 					<ul id="menu-contact-chia" class="content-info__menu">
 						<li id="menu-item-10013"
 							class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10013 content-info__menu-item">
-							<a href="#">Support</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">支持</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4432"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432 content-info__menu-item">
-							<a href="#">FAQ</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">常问问题</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-5445"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5445 content-info__menu-item">
-							<a href="#">Careers</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">职业机会</font>
+								</font>
+							</a>
 						</li>
 						<li id="menu-item-4431"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431 content-info__menu-item">
-							<a href="#">Contact</a>
+							<a href="#">
+								<font style="vertical-align: inherit;">
+									<font style="vertical-align: inherit;">接触</font>
+								</font>
+							</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div class="content-info__copyright">
-			<span>&copy; KXG Network 2024</span>
-			<nav class="menu-footer-copyright-container" aria-label="Footer - Copyright">
+			<span>
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">© KXG 网络 2024</font>
+				</font>
+			</span>
+			<nav class="menu-footer-copyright-container" aria-label="页脚 - 版权">
 				<ul id="menu-footer-copyright" class="content-info__copyright-menu">
 					<li id="menu-item-5438"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5438">
-						<a href="#">Terms of Use</a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">使用条款</font>
+							</font>
+						</a>
 					</li>
 					<li id="menu-item-5439"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5439">
-						<a href="#">Trademarks </a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">商标&nbsp;</font>
+							</font>
+						</a>
 					</li>
 					<li id="menu-item-5436"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5436">
-						<a href="#">Intellectual Property</a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">知识产权</font>
+							</font>
+						</a>
 					</li>
 					<li id="menu-item-5437"
 						class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5437">
-						<a href="#">Privacy</a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">隐私</font>
+							</font>
+						</a>
 					</li>
 					<li id="menu-item-12107"
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12107">
-						<a href="#">Logos</a>
+						<a href="#">
+							<font style="vertical-align: inherit;">
+								<font style="vertical-align: inherit;">标志</font>
+							</font>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -3327,6 +2424,61 @@
 	<script type="text/javascript"
 		src="./assets/wp-content/themes/chia-theme/assets/js/frontend/news-block.js?ver=0.1.0"
 		id="news-block-js-js"></script>
+	<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+		style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+		data-id="">
+		<div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+			<div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img
+					src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
+					alt=""></div>
+			<div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c">
+				<div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div>
+				<div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+			</div>
+			<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+				<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+					<div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">请对此翻译评分</div>
+					<div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">您的反馈将用于改进谷歌翻译</div>
+				</div>
+				<div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
+						class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很棒" aria-label="翻译质量很棒"
+						aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24"
+								viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+								</path>
+							</svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24"
+								viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+								</path>
+							</svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+						class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很差" aria-label="翻译质量很差"
+						aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24"
+								viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+								</path>
+							</svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
+								viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+								<path
+									d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+								</path>
+							</svg></span></button></div>
+			</div>
+			<div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+				<form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib"
+					method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl"
+						id="goog-gt-votingInputSrcLang"><input type="text" name="tl"
+						id="goog-gt-votingInputTrgLang"><input type="text" name="query"
+						id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
+						id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote">
+				</form><iframe name="votingFrame" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+
+
 
 </body>
 
